@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <div>
-            <h2>This is Footer Page From Shared File/Footer</h2>
             <div>
                 {/* <!-- Footer --> */}
                 <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200">
@@ -12,7 +13,8 @@ const Footer = () => {
                             <span>Get connected with us:</span>
                         </div>
                         <div className="flex justify-center items-center">
-                            <a
+                            <Link
+                            to='www.facebook.com'
                                 href="#!"
                                 className="mr-6 text-neutral-600 dark:text-neutral-200"
                             >
@@ -24,7 +26,7 @@ const Footer = () => {
                                 >
                                     <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
                                 </svg>
-                            </a>
+                            </Link>
                             <a
                                 href="#!"
                                 className="mr-6 text-neutral-600 dark:text-neutral-200"

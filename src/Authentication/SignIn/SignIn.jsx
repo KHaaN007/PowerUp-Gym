@@ -61,7 +61,7 @@ const SignIn = () => {
 
 
                         className="flex w-[30rem] flex-col space-y-10">
-                        <div className="text-center text-4xl font-medium">SignUp</div>
+                        <div className="text-center text-4xl font-medium">SignIn</div>
                         <SocialLogin></SocialLogin>
 
                         <from

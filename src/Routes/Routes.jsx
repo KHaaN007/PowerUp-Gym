@@ -6,6 +6,11 @@ import Home from "../Pages/Home/Home";
 import SignIn from "../Authentication/SignIn/SignIn";
 import SignUp from "../Authentication/SignUp/SignUp";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import Gallery from "../Pages/Gallery/Gallery";
+import Trainer from "../Pages/Trainer/Trainer";
+import Classes from "../Pages/Classes/Classes";
+import Community from "../Pages/Community/Community";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 
 
@@ -19,10 +24,33 @@ export const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>
             },
+            {
+                path: '/gallery',
+                element: <Gallery></Gallery>
+            },
+            {
+                path: '/trainer',
+                element: <Trainer></Trainer>
+            },
+            {
+                path: '/classes',
+                element: <Classes></Classes>
+            },
+            {
+                path: '/community',
+                element: <Community></Community>
+            },
+
         ]
     },
 
-    /**Authentication Part Route Start**/
+    /**Dashboard Route**/
+    {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
+    },
+
+    /**Authentication Route**/
 
     {
         path: '/signIn',

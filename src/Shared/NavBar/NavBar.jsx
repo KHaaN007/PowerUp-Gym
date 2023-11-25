@@ -187,7 +187,7 @@ function NavList() {
                     <ListItem className="flex items-center text-white fon gap-2 py-2 pr-4">Home</ListItem>
                 </Typography>
             </Link>
-            <Link to="/">
+            <Link to="/gallery">
                 <Typography
                     as="a"
                     href="#"
@@ -198,7 +198,7 @@ function NavList() {
                     <ListItem className="flex items-center text-blue-gray-100 gap-2 py-2 pr-4">Gallery</ListItem>
                 </Typography>
             </Link>
-            <Link to="/">
+            <Link to="/trainer">
                 <Typography
                     as="a"
                     href="#"
@@ -209,7 +209,7 @@ function NavList() {
                     <ListItem className="flex items-center text-blue-gray-100 gap-2 py-2 pr-4">Trainer</ListItem>
                 </Typography>
             </Link>
-            <Link to="/">
+            <Link to="/classes">
                 <Typography
                     as="a"
                     href="#"
@@ -220,7 +220,7 @@ function NavList() {
                     <ListItem className="flex items-center text-blue-gray-100 gap-2 py-2 pr-4">Classes</ListItem>
                 </Typography>
             </Link>
-            <Link to="/">
+            <Link to="/dashboard">
                 <Typography
                     as="a"
                     href="#"
@@ -231,7 +231,7 @@ function NavList() {
                     <ListItem className="flex items-center text-blue-gray-100 gap-2 py-2 pr-4">Dashboard</ListItem>
                 </Typography>
             </Link>
-            <Link to="/">
+            <Link to="/community">
                 <Typography
                     as="a"
                     href="#"
@@ -249,7 +249,7 @@ function NavList() {
 const NavBar = () => {
 
     const { user, logOut } = useAuth();
-    
+
 
     const [openNav, setOpenNav] = React.useState(false);
 
@@ -260,7 +260,7 @@ const NavBar = () => {
         );
     }, []);
     return (
-        <Navbar className="mx-auto max-w-full -mt-0.5 bg-transparent opacity-80 fixed z-50 text-white rounded-sm border-0 px-4 py-4">
+        <Navbar className="mx-auto max-w-full  bg-transparent opacity-80 fixed z-50 text-white rounded-sm border-0 px-4 py-0">
             <div className="flex items-center justify-between text-blue-gray-100">
                 <Typography
                     as="a"
@@ -268,7 +268,12 @@ const NavBar = () => {
                     variant="h6"
                     className="mr-4 cursor-pointer py-1.5 lg:ml-2"
                 >
-                    Material Tailwind
+                    <div className="flex items-center">
+
+                        <img className="w-20" src="./powerUplogo-removebg-preview.png" alt="" />
+                        <h1 className="text-3xl font-serif text-black font-bold">Power<span className="text-blue-600 text-4xl">Up</span></h1>
+
+                    </div>
                 </Typography>
                 <div className="hidden lg:block">
                     <NavList />
@@ -313,15 +318,15 @@ const NavBar = () => {
                     {/* <Link to="/login"><Button className="bg-blue-gray-50 hover:bg-blue-gray-100" variant="text" size="sm" color="blue-gray">
                         Log In
                     </Button> </Link> */}
-                     {
+                    {
                         user ?
 
                             <div className="z-30">
-                            <NavListMenu />
+                                <NavListMenu />
                             </div>
 
                             :
-                            <Link to="/login"><Button className="bg-blue-gray-50 hover:bg-blue-gray-100" variant="text" size="sm" color="blue-gray">
+                            <Link to="/signIn"><Button className="bg-blue-gray-50 hover:bg-blue-gray-100" variant="text" size="sm" color="blue-gray">
                                 Log In
                             </Button> </Link>
                     }
