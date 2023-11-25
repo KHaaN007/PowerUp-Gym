@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 
 const SignIn = () => {
 
@@ -56,13 +57,15 @@ const SignIn = () => {
                     className="mx-auto flex min-h-screen w-full items-center justify-center bg-gray-900 text-white"
                 >
                     {/* <!-- component --> */}
-                    <form
-                        onSubmit={handleSubmit(onSubmit)}
+                    <div
+
+
                         className="flex w-[30rem] flex-col space-y-10">
                         <div className="text-center text-4xl font-medium">SignUp</div>
+                        <SocialLogin></SocialLogin>
 
-
-                        <div
+                        <from
+                            onSubmit={handleSubmit(onSubmit)}
                             className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500"
                         >
                             <input
@@ -72,7 +75,7 @@ const SignIn = () => {
                                 className="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"
                             />
                             {errors.email && <span className="text-red-400">This Email  field is required</span>}
-                        </div>
+                        </from>
                         <div
                             className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500"
                         >
@@ -120,7 +123,7 @@ const SignIn = () => {
                             > Login
                             </Link>
                         </p>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

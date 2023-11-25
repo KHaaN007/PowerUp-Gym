@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import Swal from "sweetalert2";
+import useAuth from "../../Hooks/useAuth";
 
 
 const SignUp = () => {
@@ -11,6 +12,14 @@ const SignUp = () => {
     const navigate = useNavigate()
 
     const axiosPublic = useAxiosPublic();
+
+
+    const { setUser } = useAuth()
+
+    const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING
+    const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`
+
+
 
 
     const {
@@ -25,10 +34,28 @@ const SignUp = () => {
 
     const { createUser, updateUserProfile } = useContext(AuthContext)
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
+
+        // upload to imagebb and get a url}
+        const imageFile = { image: data.image[0] }
+        const res = await axiosPublic.post(image_hosting_api, imageFile, {
+            headers: {
+                'content-type': 'multipart/form-data'
+            }
+        })
+
+
+
         console.log(data);
         createUser(data.email, data.password)
             .then(result => {
+                // Update User 
+                setUser((prevUser) => {
+                    prevUser.displayName = data.name;
+                    prevUser.photoURL = res.data.data.display_url;
+                    return { ...prevUser };
+                })
+
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 updateUserProfile(data.name, data.photoURL)
@@ -105,6 +132,20 @@ const SignUp = () => {
                         />
                         {errors.email && <span className="text-red-400">This Email  field is required</span>}
                     </div>
+                    <div
+                        className="w-full transform border-2 border-r-2  bg-transparent text-lg duration-300 focus-within:border-indigo-500"
+                    >
+                        <input
+                            {...register("image", { required: true })}
+                            type="file"
+                            placeholder="Image"
+                            className="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"
+                        />
+                        {errors.email && <span className="text-red-400">This Image  field is required</span>}
+                    </div>
+
+
+
                     <div
                         className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500"
                     >
