@@ -23,7 +23,7 @@ const Banner = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 2500,
+                delay: 3500,
                 disableOnInteraction: false,
             }}
             pagination={{
@@ -35,20 +35,20 @@ const Banner = () => {
         >
 
             <SwiperSlide>
-                <img className='object-cover w-full lg:h-screen bg-black opacity-90' src="./banner10.jpg" alt="" />
+                <img className='object-cover w-full lg:h-screen bg-black opacity-90' src="./banner05.jpg" alt="" />
                 <div className='absolute z-50 bottom-44 left-96'>
                     <RowButton></RowButton>
                 </div>
             </SwiperSlide>
 
             <SwiperSlide>
-                <img className='object-cover w-full lg:h-screen bg-black opacity-90' src="./banner05.jpg" alt="" />
+                <img className='object-cover w-full lg:h-screen bg-black opacity-90' src="./banner01.jpg" alt="" />
                 <div className='absolute z-50 bottom-44 left-96'>
                     <RowButton></RowButton>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <img className='object-cover w-full lg:h-screen bg-black opacity-90' src="./banner01.jpg" alt="" />
+                <img className='object-cover w-full lg:h-screen bg-black opacity-90' src="./banner10.jpg" alt="" />
                 <div className='absolute z-50 bottom-44 left-96'>
                     <RowButton></RowButton>
                 </div>

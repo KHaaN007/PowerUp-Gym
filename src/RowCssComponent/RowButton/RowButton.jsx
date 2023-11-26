@@ -4,11 +4,7 @@ const RowButton = () => {
     return (
         <div>
 
-            <button className="button">
-
-
-                
-
+            <button className="button shadow-2xl bg-gradient-to-r from-blue-600 to-indigo-800">
 
                 <div className="text">
                     Join Classes Now
