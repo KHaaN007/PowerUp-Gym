@@ -11,6 +11,7 @@ import Trainer from "../Pages/Trainer/Trainer";
 import Classes from "../Pages/Classes/Classes";
 import Community from "../Pages/Community/Community";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import BecomeATrainer from "../Pages/Trainer/BeATrainer/BecomeATrainer/BecomeATrainer";
 
 
 
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
             {
                 path: '/community',
                 element: <Community></Community>
+            },
+            {
+                path: '/becomeATrainer',
+                element: <BecomeATrainer></BecomeATrainer>
             },
 
         ]
