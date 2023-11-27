@@ -111,11 +111,6 @@ const Trainer = () => {
                     </div>)
                 }
             </div>
-
-
-
-
-
         </div>
     );
 };

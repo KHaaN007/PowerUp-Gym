@@ -61,7 +61,7 @@ const Newsletter = () => {
         <div>
             <div className="relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-40 before:z-10">
                 <img src="https://i.ibb.co/LgdMB8n/21399591-6471716.jpg" alt="Banner Image" className="absolute  inset-0 w-full h-full object-cover object-bottom" />
-                <div className="min-h-[400px] relative z-50 h-full max-w-4xl mx-auto flex flex-col justify-center items-center text-center text-white px-6 py-10">
+                <div className="min-h-[400px] relative z-20 h-full max-w-4xl mx-auto flex flex-col justify-center items-center text-center text-white px-6 py-10">
                     <form 
                      onSubmit={handleSubmit(onSubmit)}
                     className="max-w-3xl mx-auto text-center">

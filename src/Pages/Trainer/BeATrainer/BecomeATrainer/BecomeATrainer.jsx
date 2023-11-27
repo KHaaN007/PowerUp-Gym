@@ -1,82 +1,191 @@
+
+import Swal from "sweetalert2";
+import useAxiosPublic from "../../../../Hooks/useAxiosPublic";
+
+import { useForm } from "react-hook-form";
+
+import AdsBanner from "../../../../Component/AdsBanner/AdsBanner";
+import useAxiosSecure from "../../../../Hooks/useAxiosSecure";
+import { Input } from "@material-tailwind/react";
+
 const BecomeATrainer = () => {
+
+    const axiosPublic = useAxiosPublic()
+    const axiosSecure = useAxiosSecure()
+
+    const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING
+    const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`
+
+    const { register, handleSubmit, reset } = useForm()
+    const onSubmit = async (data) => {
+        console.log(data);
+        // image upload to imgbb and then get an url
+        const imageFile = { image: data.image[0] }
+        const res = await axiosPublic.post(image_hosting_api, imageFile, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        })
+        // console.log(res.data);
+        if (res.data.success) {
+            const beAtrainer = {
+                name: data.name,
+                category: data.email,
+                price: data.age,
+                recipe: data.recipe,
+                image: res.data.data.display_url,
+            }
+            const menuRes = await axiosSecure.post('/beAtrainer', beAtrainer)
+            console.log(menuRes);
+            if (menuRes.data.insertedId) {
+                // Show Success PopUp
+                reset()
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: `${data.name} is added to the menu`,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        }
+
+    }
+
+
+
+
     return (
-        <div className="max-w-4xl p-6 mx-auto bg-indigo-600 rounded-md shadow-md dark:bg-gray-800">
-            <div>
-            <h1 className="text-xl font-bold text-white capitalize dark:text-white">Account settings</h1>
-            <form>
-                <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="username">Username</label>
-                        <input id="username" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+        <div>
+            <AdsBanner></AdsBanner>
+            <div
+                style={{ backgroundImage: "url('https://i.ibb.co/JqB4QPY/30123415-7673364.jpg')" }}
+                className="bg-cover bg-center h-screen  p-6 mx-auto bg-indigo-600 rounded-md shadow-md dark:bg-gray-800">
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:mx-20"
+                >
+                    <div className="full">
+                        <Input
+                            color="blue"
+                            {...register("name", { required: true })}
+                            label="Name" />
                     </div>
+                    <div className="full">
+                        <Input
+                            color="blue"
+                            {...register("email", { required: true })}
+                            label="Email" />
+                    </div>
+                    <div className="full">
+                        <Input
+                            color="blue"
+                            {...register("age", { required: true })}
+                            label="Age" />
+                    </div>
+                    <div className="full">
+                        <Input
+                            color="blue"
+                            type="number"
+                            {...register("availableTimeInAweek", { required: true })}
+                            label="Available Time in a week" />
+                    </div>
+                    <div className="full">
+                        <Input
+                            color="blue"
+                            type="number"
+                            {...register("availableTimeInADay", { required: true })}
+                            label="Available Time in a Day" />
+                    </div>
+                    <div className="full">
 
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="emailAddress">Email Address</label>
-                        <input id="emailAddress" type="email" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="password">Password</label>
-                        <input id="password" type="password" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="passwordConfirmation">Password Confirmation</label>
-                        <input id="passwordConfirmation" type="password" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="passwordConfirmation">Color</label>
-                        <input id="color" type="color" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="passwordConfirmation">Select</label>
-                        <select className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
-                            <option>Surabaya</option>
-                            <option>Jakarta</option>
-                            <option>Tangerang</option>
-                            <option>Bandung</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="passwordConfirmation">Range</label>
-                        <input id="range" type="range" className="block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="passwordConfirmation">Date</label>
-                        <input id="date" type="date" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-                    </div>
-                    <div>
-                        <label className="text-white dark:text-gray-200" for="passwordConfirmation">Text Area</label>
-                        <textarea id="textarea" type="textarea" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"></textarea>
-                    </div>
-                    <div>
-                        <label className="block text-sm font-medium text-white">
-                            Image
+                        <label>
+                            <input
+                                className="my-5"
+                                type="checkbox"
+                                value="Fitness Training"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-10  text-white ">Fitness Training</span>
                         </label>
-                        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                            <div className="space-y-1 text-center">
-                                <svg className="mx-auto h-12 w-12 text-white" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                    <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <div className="flex text-sm text-gray-600">
-                                    <label for="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                        <span className="">Upload a file</span>
-                                        <input id="file-upload" name="file-upload" type="file" className="sr-only" />
-                                    </label>
-                                    <p className="pl-1 text-white">or drag and drop</p>
-                                </div>
-                                <p className="text-xs text-white">
-                                    PNG, JPG, GIF up to 10MB
-                                </p>
-                            </div>
-                        </div>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Fitness Training"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Yoga</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Weightlifting"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Weightlifting</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Martial Arts"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Martial Arts</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Nutrition Counseling"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Nutrition Counseling</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Bodyweight Exercises"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Bodyweight Exercises</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Barre Workouts"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Barre Workouts</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Kettlebell Training"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Kettlebell Training</span>
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                value="Aquatic Fitness"
+                                {...register("skills")}
+                            />
+                            <span className="text-xl ml-2 mr-5 text-white">Aquatic Fitness</span>
+                        </label>
                     </div>
-                </div>
-
-                <div className="flex justify-end mt-6">
-                    <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Save</button>
-                </div>
-            </form>
+                    <div
+                        className="w-full transform border-2 border-r-2  bg-transparent text-lg duration-300 focus-within:border-indigo-500"
+                    >
+                        <input
+                            color="blue"
+                            {...register("image", { required: true })}
+                            type="file"
+                            placeholder="Image"
+                            className="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none text-white"
+                        />
+                    </div>
+                    <button className="text-6xl">Submit</button>
+                </form>
             </div>
         </div>
     );
