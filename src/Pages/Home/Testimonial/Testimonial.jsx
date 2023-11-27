@@ -81,7 +81,7 @@ const Testimonial = () => {
     
                                             <div className="mt-2 md:mx-6">
                                                 <div>
-                                                    <button className="btn text-2xl px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">{review.name}</button>
+                                                    <button disabled className="btn text-2xl px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">{review.name}</button>
                                                     <p className="text-blue-200 ">{review.location}</p>
                                                 </div>
     

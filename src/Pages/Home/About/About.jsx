@@ -16,7 +16,7 @@ const About = () => {
                             <img className="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96" src="./aboutBanner.jpg" alt="" />
 
                             <div className="mt-8 lg:px-10 lg:mt-0">
-                               <button className="btn text-2xl px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">10 Years Experience</button>
+                               <button disabled className="btn text-2xl px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">10 Years Experience</button>
 
                                 <p className="max-w-lg mt-6 text-gray-200 dark:text-gray-500">
                                     Welcome to <span className="text-2xl text-indigo-900 font-semibold font-serif">Power<span className="text-3xl text-blue-600">Up</span></span> Gym, where fitness transforms into a lifestyle and community drives motivation. More than just a gym, we`re a close-knit fitness family dedicated to your success.

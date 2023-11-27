@@ -5,6 +5,7 @@ import Featured from "./Featured/Featured";
 import Marqee from "./Marqee/Marqee";
 import Testimonial from "./Testimonial/Testimonial";
 
+
 const Home = () => {
     return (
         <div>

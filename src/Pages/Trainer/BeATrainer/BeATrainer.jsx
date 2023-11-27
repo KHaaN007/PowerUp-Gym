@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const BeATrainer = () => {
     return (
-        <div>
+        <div data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
             <div className="relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10">
-                <img src="https://i.ibb.co/7148Pzd/ban.jpg" alt="Banner Image" className="absolute inset-0 lg:w-full h-full object-cover" />
-                <div className="lg:min-h-[820px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center text-white p-6">
+                <img src="https://i.ibb.co/PYMF25D/8536150.jpg" alt="Banner Image" className="absolute inset-0 lg:w-full w-full lg:h-full object-cover" />
+                <div className="lg:min-h-[830px] relative z-20 md:min-h-[350px] max-w-6xl min-h-[195px]  mx-auto flex flex-col justify-center items-center text-center text-white p-6">
 
 
                     <Link to='/becomeATrainer'>

@@ -87,7 +87,7 @@ function NavListMenu() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = navListMenuItems.map(
-        ({ icon, title, description }, key) => (
+        ({ icon, title }, key) => (
             <a key={key}>
                 <MenuItem className="flex items-center gap-3 rounded-lg">
                     <div className="flex items-center justify-center rounded-lg !bg-blue-gray p-2 ">
@@ -112,12 +112,7 @@ function NavListMenu() {
                         >
                             {title}
                         </Typography>
-                        <Typography
-                            variant="paragraph"
-                            className="text-xs !font-medium text-blue-gray-500"
-                        >
-                            {description}
-                        </Typography>
+                        
                     </div>
                 </MenuItem>
             </a>
