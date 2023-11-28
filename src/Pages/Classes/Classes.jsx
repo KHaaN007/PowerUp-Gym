@@ -21,7 +21,7 @@ const classNameNamees = () => {
 
 
     return (
-        <div className="" style={{ backgroundImage: "url('https://i.ibb.co/vqgM44m/21937225-gym-banner-12.jpg')" }}>
+        <div style={{ backgroundImage: "url('https://i.ibb.co/vqgM44m/21937225-gym-banner-12.jpg')" }}>
             <AdsBanner></AdsBanner>
             <WeeklySchedule></WeeklySchedule>
 
@@ -35,9 +35,9 @@ const classNameNamees = () => {
 
                     <div
 
-                        className="grid grid-cols-3 container mx-auto gap-10 py-32">
+                        className="grid lg:grid-cols-3 grid-cols-1 container mx-auto gap-10 py-32">
                         {
-                            classNames.map((className) => <div key={className.id}>
+                            classNames.map((className) => <div key={className._id}>
                                 <Link
                                     to={`/classeDetail/${className._id}`}>
                                     <div className="w-full h-56 lg:h-60 rounded-xl flex justify-center items-center focus:outline-none bg-gradient-to-tr from-indigo-500 to-blue-500">

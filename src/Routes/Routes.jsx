@@ -65,9 +65,9 @@ export const router = createBrowserRouter([
             {
                 path: '/classeDetail/:id',
                 element: <ClasseDetails></ClasseDetails>, 
-                loader: ({ params }) => fetch(`http://localhost:5000/packageDetail/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/classesDetail/${params.id}`)
 
-
+           
             }
 
         ]
