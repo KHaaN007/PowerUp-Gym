@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Silver",
+        "price": 50,
+        "classesIncluded": "Yoga / Pilates",
+        "facilities": "Gym access / Sauna",
+        "joinNowButton": true
+    },
+    {
+        "id": 2,
+        "name": "Gold",
+        "price": 75,
+        "classesIncluded": "Yoga / Pilates / Zumba",
+        "facilities": "Gym access / Sauna / Swimming pool",
+        "joinNowButton": true
+    },
+    {
+        "id": 3,
+        "name": "Diamond",
+        "price": 100,
+        "classesIncluded": "Yoga / Pilates / Zumba / Spinning",
+        "facilities": "Gym access / Sauna / Swimming pool / Personal Trainer",
+        "joinNowButton": true
+    }
+]

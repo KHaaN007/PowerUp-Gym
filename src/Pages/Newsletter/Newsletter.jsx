@@ -82,7 +82,7 @@ const Newsletter = () => {
                                 placeholder='Enter your email'
                                 className="w-full outline-none bg-transparent text-sm text-[#333] px-4 py-3" />
                         </div>
-                        <button className="btn text-2xl px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">
+                        <button className="btn text-2xl px-6   py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">
                             Submit
                         </button>
                     </form>

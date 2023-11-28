@@ -1,0 +1,92 @@
+[
+    {
+        "trainer_name": "John Doe",
+        "class_name": "Cardio Blast",
+        "instruction": "High-intensity cardio workout focusing on boosting endurance and burning calories.",
+        "details": "This class includes a mix of aerobic exercises, plyometrics, and interval training."
+    },
+    {
+        "trainer_name": "Emily Smith",
+        "class_name": "Yoga Flow",
+        "instruction": "Gentle flow combining breath with movement to improve flexibility and relaxation.",
+        "details": "Suitable for all levels, this class emphasizes proper alignment and mindful breathing."
+    },
+    {
+        "trainer_name": "Michael Johnson",
+        "class_name": "Strength Training",
+        "instruction": "Target major muscle groups with resistance exercises to build strength and tone.",
+        "details": "Utilizes free weights, resistance bands, and bodyweight exercises for a full-body workout."
+    },
+    {
+        "trainer_name": "Miranda Cohen",
+        "class_name": "Pilates Core",
+        "instruction": "Focuses on core strength, stability, and flexibility through controlled movements.",
+        "details": "Incorporates mat-based exercises to improve posture and develop a strong core."
+    },
+    {
+        "trainer_name": "Alex Williams",
+        "class_name": "HIIT Circuit",
+        "instruction": "High-intensity interval training combining cardio and strength exercises.",
+        "details": "Alternates between bursts of intense activity and short recovery periods for maximum results."
+    },
+    {
+        "trainer_name": "Olivia Brown",
+        "class_name": "Dance Fitness",
+        "instruction": "Dynamic and fun dance-based workout to enhance cardiovascular health.",
+        "details": "Incorporates various dance styles and movements for an energetic full-body workout."
+    },
+    {
+        "trainer_name": "Daniel Garcia",
+        "class_name": "Bootcamp Burn",
+        "instruction": "Challenging total-body workout involving functional movements and drills.",
+        "details": "Designed to improve strength, agility, and endurance through diverse exercises."
+    },
+    {
+        "trainer_name": "Gia Lie",
+        "class_name": "Barre Fusion",
+        "instruction": "Combines elements of ballet, Pilates, and yoga for a full-body workout.",
+        "details": "Targets specific muscle groups using the ballet barre, focusing on strength and toning."
+    },
+    {
+        "trainer_name": "Liam Wilson",
+        "class_name": "Cycling Revolution",
+        "instruction": "Energetic indoor cycling class set to music, great for cardiovascular fitness.",
+        "details": "Involves varying speeds and resistance levels to simulate outdoor cycling challenges."
+    },
+    {
+        "trainer_name": "Ella Anderson",
+        "class_name": "Mindful Meditation",
+        "instruction": "Guided meditation to reduce stress, increase self-awareness, and promote relaxation.",
+        "details": "Incorporates breathing techniques and mindfulness practices for mental well-being."
+    },
+    {
+        "trainer_name": "Daniel Thompson",
+        "class_name": "Functional Fitness",
+        "instruction": "Improves everyday movements and strength for better functionality in daily life.",
+        "details": "Focuses on exercises that mimic real-life activities to enhance overall fitness."
+    },
+    {
+        "trainer_name": "Noah Roberts",
+        "class_name": "Boxing Basics",
+        "instruction": "Introduction to boxing techniques, footwork, and conditioning drills.",
+        "details": "Incorporates bag work, shadow boxing, and partner exercises for a full-body workout."
+    },
+    {
+        "trainer_name": "Mia Clark",
+        "class_name": "Stretch & Flex",
+        "instruction": "Gentle stretching routine to improve flexibility and reduce muscle tension.",
+        "details": "Focuses on stretching major muscle groups to enhance range of motion and relaxation."
+    },
+    {
+        "trainer_name": "William Hall",
+        "class_name": "Aqua Aerobics",
+        "instruction": "Low-impact aerobic workout performed in water to improve cardiovascular fitness.",
+        "details": "Utilizes water resistance for a joint-friendly workout suitable for all fitness levels."
+    },
+    {
+        "trainer_name": "Sofia Patterson",
+        "class_name": "Zumba Party",
+        "instruction": "Fun and energetic dance fitness class featuring Latin-inspired music and moves.",
+        "details": "A fusion of dance styles aimed at burning calories while enjoying a lively atmosphere."
+    }
+]

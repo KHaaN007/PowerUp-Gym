@@ -3,6 +3,7 @@ import { useState } from "react";
 import BeATrainer from "./BeATrainer/BeATrainer";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Link } from "react-router-dom";
 AOS.init();
 
 
@@ -13,7 +14,7 @@ const Trainer = () => {
 
 
     useEffect(() => {
-        fetch('/trainers.json')
+        fetch('http://localhost:5000/trainers')
             .then(res => res.json())
             .then(data => {
 
@@ -21,7 +22,17 @@ const Trainer = () => {
             })
     }, [])
 
-    console.log(trainers);
+    // console.log(trainers);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -32,7 +43,7 @@ const Trainer = () => {
 
             <div data-aos="fade-down" className=" md:px-6 gap-10 py-10  grid lg:grid-cols-2 grid-cols-1">
                 {
-                    trainers.map(trainer => <div key={trainer.id} className="mb-32 text-center rounded-xl shadow-2xl lg:text-left bg-gradient-to-r from-indigo-700 to-purple-400">
+                    trainers.map(trainer => <div key={trainer._id} className="mb-32 text-center rounded-xl shadow-2xl lg:text-left bg-gradient-to-r from-indigo-700 to-purple-400">
                         <div className="py-12 md:px-6 md:px-12">
                             <div className="">
                                 <div className="flex grid items-center lg:grid-cols-2">
@@ -96,9 +107,11 @@ const Trainer = () => {
                                                 </div>
                                             </div>
 
-                                        <button className="relative mt-8 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all rounded-lg duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
-                                            <span class="relative z-10">Know More</span>
-                                        </button>
+                                            <Link to={`/trainerDetail/${trainer._id}`}>
+                                                <button className="relative mt-8 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all rounded-lg duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
+                                                    <span className="relative z-10">Know More</span>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="md:mb-12 lg:mb-0">

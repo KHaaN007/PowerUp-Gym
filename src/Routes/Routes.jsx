@@ -12,6 +12,8 @@ import Classes from "../Pages/Classes/Classes";
 import Community from "../Pages/Community/Community";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import BecomeATrainer from "../Pages/Trainer/BeATrainer/BecomeATrainer/BecomeATrainer";
+import TrainerDetails from "../Pages/Trainer/TrainerDetails";
+import TrainerPackage from "../Pages/Trainer/TrainerPackage/TrainerPackage";
 
 
 
@@ -45,6 +47,20 @@ export const router = createBrowserRouter([
                 path: '/becomeATrainer',
                 element: <BecomeATrainer></BecomeATrainer>
             },
+            {
+                path: '/trainerDetail/:id',
+                element: <TrainerDetails></TrainerDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/trainerDetail/${params.id}`)
+
+
+            },
+            {
+                path: '/packageDetail/:id',
+                element: <TrainerPackage></TrainerPackage>,
+                // loader: ({ params }) => fetch(`http://localhost:5000/packageDetail/${params.id}`)
+
+
+            }
 
         ]
     },

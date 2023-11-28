@@ -1,11 +1,30 @@
-import React from 'react';
+import { useEffect } from "react";
+import { useState } from "react";
+import AdsBanner from "../../Component/AdsBanner/AdsBanner";
+import WeeklySchedule from "./WeeklySchedule/WeeklySchedule";
 
-const Classes = () => {
+
+
+
+
+const classNamees = () => {
+    const [classNamees, setclassNamees] = useState([])
+
+    useEffect(() => {
+        fetch('/classNamees.json')
+            .then(res => res.json())
+            .then(data => setclassNamees(data))
+    }, [])
+    console.log(classNamees);
+
+
     return (
-        <div className='flex place-content-center h-screen'>
-            <h2 className='text-4xl font-bold my-auto'>This Is Classes Page</h2>
+        <div>
+            <AdsBanner></AdsBanner>
+            <WeeklySchedule></WeeklySchedule>
+           
         </div>
     );
 };
 
-export default Classes;
+export default classNamees;
