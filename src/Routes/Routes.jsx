@@ -14,6 +14,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import BecomeATrainer from "../Pages/Trainer/BeATrainer/BecomeATrainer/BecomeATrainer";
 import TrainerDetails from "../Pages/Trainer/TrainerDetails";
 import TrainerPackage from "../Pages/Trainer/TrainerPackage/TrainerPackage";
+import ClasseDetails from "../Pages/Classes/ClasseDetails/ClasseDetails";
 
 
 
@@ -58,6 +59,13 @@ export const router = createBrowserRouter([
                 path: '/packageDetail/:id',
                 element: <TrainerPackage></TrainerPackage>,
                 // loader: ({ params }) => fetch(`http://localhost:5000/packageDetail/${params.id}`)
+
+
+            },
+            {
+                path: '/classeDetail/:id',
+                element: <ClasseDetails></ClasseDetails>, 
+                loader: ({ params }) => fetch(`http://localhost:5000/packageDetail/${params.id}`)
 
 
             }
