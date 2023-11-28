@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AdsBanner from "../../../Component/AdsBanner/AdsBanner";
 
 const TrainerPackage = () => {
-    const [slotPackages, setSlotPackages] = useState([])
+        const [slotPackages, setSlotPackages] = useState([])
 
     useEffect(() => {
         fetch('/slotPackage.json')
@@ -12,7 +12,7 @@ const TrainerPackage = () => {
             .then(data => setSlotPackages(data))
     }, [])
 
-    // console.log(slotPackages);
+    console.log(slotPackages);
 
     return (
         <div>
