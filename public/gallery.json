@@ -1,0 +1,212 @@
+[
+    {
+      "id": 1,
+      "url": "https://example.com/gym-image1.jpg",
+      "title": "Cardio Area",
+      "description": "State-of-the-art cardio machines for a great workout."
+    },
+    {
+      "id": 2,
+      "url": "https://example.com/gym-image2.jpg",
+      "title": "Weightlifting Zone",
+      "description": "Dedicated space for weightlifting with a variety of equipment."
+    },
+    {
+      "id": 3,
+      "url": "https://example.com/gym-image3.jpg",
+      "title": "Group Fitness Classes",
+      "description": "High-energy group fitness sessions for all fitness levels."
+    },
+    {
+      "id": 4,
+      "url": "https://example.com/gym-image4.jpg",
+      "title": "Indoor Cycling Studio",
+      "description": "Specialized studio equipped for indoor cycling workouts."
+    },
+    {
+      "id": 5,
+      "url": "https://example.com/gym-image5.jpg",
+      "title": "Yoga and Meditation",
+      "description": "Relaxing space for yoga and meditation sessions."
+    },
+    {
+      "id": 6,
+      "url": "https://example.com/gym-image6.jpg",
+      "title": "Functional Training Area",
+      "description": "Area for functional workouts and dynamic movements."
+    },
+    {
+      "id": 7,
+      "url": "https://example.com/gym-image7.jpg",
+      "title": "Swimming Pool",
+      "description": "Luxurious indoor swimming pool for aquatic exercises."
+    },
+    {
+      "id": 8,
+      "url": "https://example.com/gym-image8.jpg",
+      "title": "Sauna and Spa",
+      "description": "Relaxing sauna and spa facilities for post-workout relaxation."
+    },
+    {
+      "id": 9,
+      "url": "https://example.com/gym-image9.jpg",
+      "title": "Personal Training Sessions",
+      "description": "Customized training sessions with certified personal trainers."
+    },
+    {
+      "id": 10,
+      "url": "https://example.com/gym-image10.jpg",
+      "title": "Athletic Performance Area",
+      "description": "Specialized area for athletic performance training."
+    },
+    {
+      "id": 11,
+      "url": "https://example.com/gym-image11.jpg",
+      "title": "Gym Interior",
+      "description": "Interior view showcasing the modern gym design."
+    },
+    {
+      "id": 12,
+      "url": "https://example.com/gym-image12.jpg",
+      "title": "Outdoor Workout Space",
+      "description": "Outdoor area equipped for functional workouts and boot camps."
+    },
+    {
+      "id": 13,
+      "url": "https://example.com/gym-image13.jpg",
+      "title": "Nutrition Bar",
+      "description": "Healthy refreshments and nutritional supplements available."
+    },
+    {
+      "id": 14,
+      "url": "https://example.com/gym-image14.jpg",
+      "title": "Reception Area",
+      "description": "Welcoming reception area with helpful staff."
+    },
+    {
+      "id": 15,
+      "url": "https://example.com/gym-image15.jpg",
+      "title": "Gym Events",
+      "description": "Memorable events and fitness challenges held at the gym."
+    },
+    {
+        "id": 16,
+        "url": "https://example.com/gym-image16.jpg",
+        "title": "Boxing and MMA Area",
+        "description": "Dedicated space for boxing and mixed martial arts training."
+      },
+      {
+        "id": 17,
+        "url": "https://example.com/gym-image17.jpg",
+        "title": "Circuit Training Zone",
+        "description": "Circuit-based workout zone for quick and effective exercises."
+      },
+      {
+        "id": 18,
+        "url": "https://example.com/gym-image18.jpg",
+        "title": "Strength Training Equipment",
+        "description": "Wide array of equipment for strength training workouts."
+      },
+      {
+        "id": 19,
+        "url": "https://example.com/gym-image19.jpg",
+        "title": "Stretching Area",
+        "description": "Dedicated area for stretching and flexibility exercises."
+      },
+      {
+        "id": 20,
+        "url": "https://example.com/gym-image20.jpg",
+        "title": "Health and Wellness Workshops",
+        "description": "Educational workshops promoting health and wellness."
+      },
+      {
+        "id": 21,
+        "url": "https://example.com/gym-image21.jpg",
+        "title": "Gym Exterior",
+        "description": "Exterior view showcasing the gym's facade and entrance."
+      },
+      {
+        "id": 22,
+        "url": "https://example.com/gym-image22.jpg",
+        "title": "Functional Fitness Equipment",
+        "description": "Cutting-edge equipment for functional fitness workouts."
+      },
+      {
+        "id": 23,
+        "url": "https://example.com/gym-image23.jpg",
+        "title": "Dance Studio",
+        "description": "Spacious studio for dance-based fitness classes."
+      },
+      {
+        "id": 24,
+        "url": "https://example.com/gym-image24.jpg",
+        "title": "Athlete Recovery Room",
+        "description": "Room equipped for athlete recovery and rehabilitation."
+      },
+      {
+        "id": 25,
+        "url": "https://example.com/gym-image25.jpg",
+        "title": "Outdoor Obstacle Course",
+        "description": "Challenging obstacle course set up in the gym's outdoor area."
+      },
+      {
+        "id": 26,
+        "url": "https://example.com/gym-image26.jpg",
+        "title": "Mind-Body Connection",
+        "description": "Activities promoting the mind-body connection for holistic wellness."
+      },
+      {
+        "id": 27,
+        "url": "https://example.com/gym-image27.jpg",
+        "title": "Athletic Training Sessions",
+        "description": "Specialized training sessions for athletes."
+      },
+      {
+        "id": 28,
+        "url": "https://example.com/gym-image28.jpg",
+        "title": "Gym Social Events",
+        "description": "Fun social events and gatherings organized at the gym."
+      },
+      {
+        "id": 29,
+        "url": "https://example.com/gym-image29.jpg",
+        "title": "Fitness Equipment Maintenance",
+        "description": "Maintenance and care of gym equipment for quality workouts."
+      },
+      {
+        "id": 30,
+        "url": "https://example.com/gym-image30.jpg",
+        "title": "Senior Fitness Classes",
+        "description": "Tailored fitness classes for older adults to maintain health."
+      },
+      {
+        "id": 31,
+        "url": "https://example.com/gym-image31.jpg",
+        "title": "Gym Awards and Achievements",
+        "description": "Recognition for the gym's achievements and awards."
+      },
+      {
+        "id": 32,
+        "url": "https://example.com/gym-image32.jpg",
+        "title": "Family Fitness Activities",
+        "description": "Activities encouraging family fitness and bonding."
+      },
+      {
+        "id": 33,
+        "url": "https://example.com/gym-image33.jpg",
+        "title": "Nutrition Consultation",
+        "description": "Professional consultations for personalized nutrition plans."
+      },
+      {
+        "id": 34,
+        "url": "https://example.com/gym-image34.jpg",
+        "title": "Gym Interior Design",
+        "description": "Interior design showcasing modern gym aesthetics."
+      },
+      {
+        "id": 35,
+        "url": "https://example.com/gym-image35.jpg",
+        "title": "Athletic Conditioning",
+        "description": "Conditioning programs for improving athletic performance."
+      }
+  ]

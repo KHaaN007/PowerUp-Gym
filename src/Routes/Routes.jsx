@@ -15,6 +15,10 @@ import BecomeATrainer from "../Pages/Trainer/BeATrainer/BecomeATrainer/BecomeATr
 import TrainerDetails from "../Pages/Trainer/TrainerDetails";
 import TrainerPackage from "../Pages/Trainer/TrainerPackage/TrainerPackage";
 import ClasseDetails from "../Pages/Classes/ClasseDetails/ClasseDetails";
+import AllSubscribers from "../Dashboard/Admin/AllSubscribers/AllSubscribers";
+import AllTrainers from "../Dashboard/Admin/AllTrainers/AllTrainers";
+import AppliedTrainer from "../Dashboard/Admin/AppliedTrainer/AppliedTrainer";
+import Balance from "../Dashboard/Admin/Balance/Balance";
 
 
 
@@ -76,7 +80,25 @@ export const router = createBrowserRouter([
     /**Dashboard Route**/
     {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children:[
+            {
+                path:'allSubscribes',
+                element:<AllSubscribers></AllSubscribers>
+            },
+            {
+                path:'allTrainer',
+                element:<AllTrainers></AllTrainers>
+            },
+            {
+                path:'appliedTrainer',
+                element:<AppliedTrainer></AppliedTrainer>
+            },
+            {
+                path:'balance',
+                element:<Balance></Balance>
+            }
+        ]
     },
 
     /**Authentication Route**/
