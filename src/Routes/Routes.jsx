@@ -19,6 +19,10 @@ import AllSubscribers from "../Dashboard/Admin/AllSubscribers/AllSubscribers";
 import AllTrainers from "../Dashboard/Admin/AllTrainers/AllTrainers";
 import AppliedTrainer from "../Dashboard/Admin/AppliedTrainer/AppliedTrainer";
 import Balance from "../Dashboard/Admin/Balance/Balance";
+import ManageSlots from "../Dashboard/Trainer/ManageSlots/ManageSlots";
+import ManageMember from "../Dashboard/Trainer/ManageMember/ManageMember";
+import AddNewForum from "../Dashboard/Trainer/AddNewForum/AddNewForum";
+import AddNewClass from "../Dashboard/Trainer/AddNewClass/AddNewClass";
 
 
 
@@ -97,7 +101,23 @@ export const router = createBrowserRouter([
             {
                 path:'balance',
                 element:<Balance></Balance>
-            }
+            },
+            {
+                path:'manageSlots',
+                element:<ManageSlots></ManageSlots>,
+            },
+            {
+                path:'manageMember',
+                element:<ManageMember></ManageMember>
+            },
+            {
+                path:'addNewForum',
+                element:<AddNewForum></AddNewForum>
+            },
+            {
+                path:'addNewClass',
+                element:<AddNewClass></AddNewClass>
+            },
         ]
     },
 
