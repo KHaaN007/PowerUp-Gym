@@ -9,10 +9,7 @@ const TrainerDetails = () => {
 
 
     const slots = data.availableTimeSlots
-
-    // console.log(data);
-
-    // console.log(slots);
+    
     return (
         <div>
             <AdsBanner></AdsBanner>

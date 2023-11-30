@@ -14,14 +14,14 @@ const BecomeATrainer = () => {
     const axiosPublic = useAxiosPublic()
     const axiosSecure = useAxiosSecure()
     const { user } = useAuth()
-    // console.log(user?.email);
+    console.log(user?.email);
 
     const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING
     const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`
 
     const { register, handleSubmit, reset } = useForm()
     const onSubmit = async (data) => {
-        console.log(data);
+        console.log(data.email);
         // image upload to imgbb and then get an url
         const imageFile = { image: data.image[0] }
         const res = await axiosPublic.post(image_hosting_api, imageFile, {
@@ -33,7 +33,7 @@ const BecomeATrainer = () => {
         if (res.data.success) {
             const beAtrainer = {
                 name: data.name,
-                email: data.email,
+                email: user.email,
                 age: data.email,
                 status: 'Applied Trainer',
                 availableTimeInAweek: data.availableTimeInAweek,

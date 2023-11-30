@@ -1,38 +1,16 @@
-import { useEffect } from "react";
-import { useState } from "react";
+
 import BeATrainer from "./BeATrainer/BeATrainer";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
+
+import useTrainer from "../../Hooks/useTrainer";
 AOS.init();
 
 
 const Trainer = () => {
 
-    const [trainers, setTrainers] = useState([])
-
-
-
-    useEffect(() => {
-        fetch('http://localhost:5000/trainers')
-            .then(res => res.json())
-            .then(data => {
-
-                setTrainers(data)
-            })
-    }, [])
-
-    // console.log(trainers);
-
-
-
-
-
-
-
-
-
-
+const [trainers]=useTrainer()
 
 
 

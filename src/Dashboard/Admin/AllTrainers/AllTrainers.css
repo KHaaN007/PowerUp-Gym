@@ -1,0 +1,13 @@
+/* Adjust the container's height and overflow to display a vertical scrollbar */
+.overflow-x-auto {
+    max-height: 80vh; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  /* Optionally, to make the table headers sticky */
+  th {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  

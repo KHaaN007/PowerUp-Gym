@@ -32,7 +32,7 @@ const AllSubscribers = () => {
                                 </tr>
                             </thead>
                             {
-                                subscribes.map(subscribe=><tbody key={subscribe._id}>
+                                subscribes.map(subscribe => <tbody key={subscribe._id}>
                                     <tr>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                             <div className="flex px-2 py-1">
@@ -43,13 +43,13 @@ const AllSubscribers = () => {
                                         </td>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                             <p className="mb-0 font-semibold leading-tight text-base">{subscribe.name}</p>
-    
+
                                         </td>
-    
+
                                     </tr>
-    
-    
-    
+
+
+
                                 </tbody>)
                             }
                         </table>

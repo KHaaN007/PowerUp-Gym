@@ -3,6 +3,7 @@
     "id": 1,
     "name": "John Doe",
     "status": "trainer",
+    "email": "john@johndoe.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -53,6 +54,7 @@
     "id": 2,
     "name": "Emily Smith",
     "status": "trainer",
+    "email": "emaily@emilysmith.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -64,7 +66,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-    
     "profileImage": "https://i.ibb.co/jvjVvzD/sportive-man-black-shirt-closing-his-arm-muscles-1.jpg",
     "experience": 5,
     "socialIcons": {
@@ -96,6 +97,7 @@
     "id": 3,
     "name": "Michael Johnson",
     "status": "trainer",
+    "email": "michael@michaeljohnson.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -107,7 +109,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/HpyZKLh/sports-man-spend-time-morning-gym.jpg",
     "experience": 10,
     "socialIcons": {
@@ -151,6 +152,7 @@
     "id": 4,
     "name": "Miranda Cohen",
     "status": "trainer",
+    "email": "miranda@mirandacohen.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -162,7 +164,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/4FCm6pm/398606307-306253208916007-4473740068670943918-n.jpg",
     "experience": 6,
     "socialIcons": {
@@ -198,6 +199,7 @@
     "id": 5,
     "name": "Alex Williams",
     "status": "trainer",
+    "email": "alex@alexwilliams.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -209,7 +211,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/jzbmwLL/young-adult-doing-indoor-sport-gym.jpg",
     "experience": 4,
     "socialIcons": {
@@ -257,6 +258,7 @@
     "id": 6,
     "name": "Olivia Brown",
     "status": "trainer",
+    "email": "olivia@oliviabrown.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -268,7 +270,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/cbJLqX0/young-sports-man-training-gym.jpg",
     "experience": 9,
     "socialIcons": {
@@ -308,6 +309,7 @@
     "id": 7,
     "name": "Daniel Garcia",
     "status": "trainer",
+    "email": "daniel@danielgarcia.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -319,7 +321,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
- 
     "profileImage": "https://i.ibb.co/RT08yKf/studio-portrait-bearded-brutal-male-isolated-gray-background.jpg",
     "experience": 7,
     "socialIcons": {
@@ -355,6 +356,7 @@
     "id": 8,
     "name": "Gia Lie",
     "status": "trainer",
+    "email": "gia@gialie.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -366,7 +368,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/9HN2b8D/athletic-woman-working-out-gym.jpg",
     "experience": 3,
     "socialIcons": {
@@ -418,6 +419,7 @@
     "id": 9,
     "name": "Liam Wilson",
     "status": "trainer",
+    "email": "liam@liamwilson.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -429,7 +431,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
- 
     "profileImage": "https://i.ibb.co/9GXP1XT/confident-sportsman-with-headphones-jumping-rope.jpg",
     "experience": 4,
     "socialIcons": {
@@ -469,6 +470,7 @@
     "id": 10,
     "name": "Ella Anderson",
     "status": "trainer",
+    "email": "ella@ellaanderson.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -480,7 +482,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/dbKVxKC/handsome-black-man-is-engaged-gym.jpg",
     "experience": 6,
     "socialIcons": {
@@ -524,6 +525,7 @@
     "id": 11,
     "name": "Daniel Thompson",
     "status": "trainer",
+    "email": "daniel@danielthompson.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -535,7 +537,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-   
     "profileImage": "https://i.ibb.co/2NyyKzf/front-view-male-training-with-weights.jpg",
     "experience": 7,
     "socialIcons": {
@@ -575,6 +576,7 @@
     "id": 12,
     "name": "Noah Roberts",
     "status": "trainer",
+    "email": "noah@noahroberts.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -586,7 +588,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-   
     "profileImage": "https://i.ibb.co/xSyz5N0/portrait-young-handsome-sportsman-holds-hand-chin-dark-background.jpg",
     "experience": 5,
     "socialIcons": {
@@ -618,6 +619,7 @@
     "id": 13,
     "name": "Mia Clark",
     "status": "trainer",
+    "email": "mia@miaclark.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -629,7 +631,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/dMsFvZp/medium-shot-beautiful-woman-with-dumbbells.jpg",
     "experience": 9,
     "socialIcons": {
@@ -673,6 +674,7 @@
     "id": 14,
     "name": "William Hall",
     "status": "trainer",
+    "email": "william@williamhall.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -684,7 +686,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-  
     "profileImage": "https://i.ibb.co/7nTXC0x/medium-shot-smiley-man-gym.jpg",
     "experience": 6,
     "socialIcons": {
@@ -720,6 +721,7 @@
     "id": 15,
     "name": "Sofia Patterson",
     "status": "trainer",
+    "email": "sofia@johsofiapattersonndoe.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -731,7 +733,6 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-
     "profileImage": "https://i.ibb.co/dbCH9BY/young-beautiful-sportive-girl-training-with-dumbbells-dark-wall.jpg",
     "experience": 4,
     "socialIcons": {

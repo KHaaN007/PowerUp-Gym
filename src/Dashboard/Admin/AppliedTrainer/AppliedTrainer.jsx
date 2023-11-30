@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { useEffect } from "react";
+import { FaEye } from "react-icons/fa";
 
 const AppliedTrainer = () => {
 
@@ -11,14 +12,13 @@ const AppliedTrainer = () => {
     useEffect(() => {
         axiosPublic.get('/trainers')
             .then(res => {
-                // console.log(res.data)
                 setTrainers(res.data)
             })
     }, [axiosPublic])
-    // console.log(trainers);
+
 
     const appliedTrainers =trainers.filter(trainer=>trainer.status === 'Applied Trainer')
-    // console.log(appliedTrainer);
+
     return (
         <div>
             <div className="relative flex flex-col w-full min-w-0 mb-0 break-words  border-0 border-transparent border-solid shadow-2xl pb-32 rounded-2xl bg-clip-border">
@@ -30,6 +30,7 @@ const AppliedTrainer = () => {
                         <table className="items-center w-full mb-0 align-top border-gray-200 text-slate-500">
                             <thead className="align-bottom">
                                 <tr>
+                                    <th className="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-lg border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 text-cyan-200"> Profile</th>
                                     <th className="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-lg border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 text-cyan-200"> Email</th>
                                     <th className="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-lg border-b-solid tracking-none whitespace-nowrap text-slate-400 text-cyan-200 opacity-70"> Name</th>
                                     <th className="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-lg border-b-solid tracking-none whitespace-nowrap text-slate-400 text-cyan-200 opacity-70"> Details</th>
@@ -39,6 +40,13 @@ const AppliedTrainer = () => {
                             {
                                 appliedTrainers.map(appliedTrainer=><tbody key={appliedTrainer._id}>
                                     <tr>
+                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                        <div className="flex px-2 py-2">
+                                            <div className="flex flex-col justify-center">
+                                            <img className="w-14 rounded-full border-white" src={appliedTrainer.profileImage} alt=""/>
+                                            </div>
+                                        </div>
+                                    </td>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                             <div className="flex px-2 py-1">
                                                 <div className="flex flex-col justify-center">
@@ -51,9 +59,9 @@ const AppliedTrainer = () => {
     
                                         </td>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                            <button></button>
-    
-                                        </td>
+                                        <button className="mb-0 font-semibold leading-tight text-2xl"><FaEye /></button>
+
+                                    </td>
     
                                     </tr>
                                 </tbody>)
