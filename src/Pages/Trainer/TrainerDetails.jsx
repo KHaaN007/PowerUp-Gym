@@ -1,15 +1,22 @@
 import { Link, useLoaderData } from "react-router-dom";
 import AdsBanner from "../../Component/AdsBanner/AdsBanner";
 import Marquee from "react-fast-marquee";
+import BeATrainer from "./BeATrainer/BeATrainer";
 
 const TrainerDetails = () => {
     const data = useLoaderData()
 
 
-
+    console.log(data);
 
     const slots = data.availableTimeSlots
-    
+
+
+    // console.log(slots);
+
+
+
+
     return (
         <div>
             <AdsBanner></AdsBanner>
@@ -32,7 +39,9 @@ const TrainerDetails = () => {
                                     <h2 className="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
                                         {data.name}
                                     </h2>
-                                    <button disabled className="btn text-2xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">Start Season At {slot.start}</button>
+                                    <button disabled className="btn text-2xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">
+
+                                    </button>
                                     <button disabled className="btn text-2xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">Season End At {slot.end} </button>
 
                                 </div>
@@ -41,6 +50,7 @@ const TrainerDetails = () => {
                     }
                 </div>
             </Link>
+            <BeATrainer></BeATrainer>
         </div>
     );
 };

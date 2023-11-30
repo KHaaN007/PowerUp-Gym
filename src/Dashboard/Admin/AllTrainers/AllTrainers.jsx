@@ -6,7 +6,7 @@ const AllTrainers = () => {
 
     const [trainers] = useTrainer()
 
-    console.log(trainers);
+    // console.log(trainers);
     const appliedTrainers = trainers.filter(trainer => trainer.status === 'trainer')
 
     return (
@@ -33,7 +33,7 @@ const AllTrainers = () => {
                                     <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                         <div className="flex px-2 py-2">
                                             <div className="flex flex-col justify-center">
-                                                <img className="w-10 rounded-full border-white" src={trainer.profileImage} alt="" />
+                                                <img className="w-14 h-14 rounded-full overflow-auto border-white" src={trainer.profileImage} alt="" />
                                             </div>
                                         </div>
                                     </td>

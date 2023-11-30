@@ -18,7 +18,7 @@ const Dashboard = () => {
             <div className='grid col-span-2 shadow-2xl bg-gradient-to-r from-blue-600 to-indigo-800'>
                 {/* Name and Website Logo */}
                 <div className="flex mx-auto">
-                    <img className="w-20 h-20 flex items-center justify-center" src="./powerUplogo-removebg-preview.png" alt="" />
+                    <img className="w-20 h-20 flex items-center justify-center" src="/powerUplogo-removebg-preview.png" alt="" />
                     <h1 className="text-3xl py-2 font-serif text-black font-bold">Power<span className="text-blue-600 text-4xl">Up</span></h1>
                 </div>
                 {

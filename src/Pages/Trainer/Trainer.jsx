@@ -1,5 +1,4 @@
 
-import BeATrainer from "./BeATrainer/BeATrainer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
@@ -17,7 +16,7 @@ const [trainers]=useTrainer()
 
     return (
         <div>
-            <BeATrainer></BeATrainer>
+       
 
             <div data-aos="fade-down" className=" md:px-6 gap-10 py-10  grid lg:grid-cols-2 grid-cols-1">
                 {

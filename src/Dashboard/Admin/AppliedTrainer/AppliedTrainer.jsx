@@ -18,6 +18,7 @@ const AppliedTrainer = () => {
 
 
     const appliedTrainers =trainers.filter(trainer=>trainer.status === 'Applied Trainer')
+    // console.log(appliedTrainers);
 
     return (
         <div>
@@ -60,6 +61,7 @@ const AppliedTrainer = () => {
                                         </td>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                         <button className="mb-0 font-semibold leading-tight text-2xl"><FaEye /></button>
+                                        
 
                                     </td>
     

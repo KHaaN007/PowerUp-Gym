@@ -1,9 +1,9 @@
 const Featured = () => {
     return (
         <div>
-            <div className="font-[sans-serif] text-white   py-12 px-4">
+            <div className="font-[sans-serif]  py-12 px-4">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="sm:text-6xl text-2xl font-extrabold mb-16 bg-gradient-to-r text-from-white to-black shadow-lg p-5 border-r-4 rounded-lg">WHY CHOOSE US</h2>
+                    <h2 className="sm:text-6xl text-2xl font-extrabold mb-16  bg-gradient-to-r from-blue-600 to-indigo-900  shadow-lg p-5 border-r-8 rounded-lg">WHY CHOOSE US</h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 max-md:max-w-lg mx-auto">
                         <div className="rounded-xl group p-8 text-center hover:bg-white hover:text-purple-800 hover:shadow-xl transition duration-300  flex flex-col items-center justify-center">
                             <img className="w-16 py-5" src="./weightlifting.png" alt="" />

@@ -25,28 +25,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "3:00 PM - 4:00 PM"
       }
     ]
   },
@@ -76,20 +70,16 @@
     "availableSlotsPerDay": 4,
     "availableTimeSlots": [
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       }
     ]
   },
@@ -109,7 +99,7 @@
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
-    "profileImage": "https://i.ibb.co/HpyZKLh/sports-man-spend-time-morning-gym.jpg",
+    "profileImage": "https://i.ibb.co/HpyZKLh/sport-me-morning-gym.jpg",
     "experience": 10,
     "socialIcons": {
       "website": "https://www.michaeljohnson.com",
@@ -119,32 +109,25 @@
     "availableSlotsPerDay": 7,
     "availableTimeSlots": [
       {
-        "start": 8,
-        "end": 9
+        "timeSolt": "8- 9"
       },
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       }
     ]
   },
@@ -174,24 +157,19 @@
     "availableSlotsPerDay": 5,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 12,
-        "end": 13
+        "timeSolt": "12 - 13"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       }
     ]
   },
@@ -221,36 +199,25 @@
     "availableSlotsPerDay": 8,
     "availableTimeSlots": [
       {
-        "start": 8,
-        "end": 9
+        "timeSolt": "8 - 9"
       },
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 15,
-        "end": 16
-      },
-      {
-        "start": 16,
-        "end": 17
+        "timeSolt": "16 - 17"
       }
     ]
   },
@@ -280,28 +247,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 12,
-        "end": 13
+        "timeSolt": "12 - 13"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 16,
-        "end": 17
+        "timeSolt": "16 - 17"
       }
     ]
   },
@@ -331,24 +292,19 @@
     "availableSlotsPerDay": 5,
     "availableTimeSlots": [
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 16,
-        "end": 17
+        "timeSolt": "16 - 17"
       }
     ]
   },
@@ -378,40 +334,28 @@
     "availableSlotsPerDay": 9,
     "availableTimeSlots": [
       {
-        "start": 8,
-        "end": 9
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "12 - 13"
       },
       {
-        "start": 12,
-        "end": 13
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "16 - 17"
       },
       {
-        "start": 16,
-        "end": 17
-      },
-      {
-        "start": 17,
-        "end": 18
+        "timeSolt": "17 - 18"
       }
     ]
   },
@@ -441,28 +385,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 12,
-        "end": 13
+        "timeSolt": "12 - 13"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 17,
-        "end": 18
+        "timeSolt": "17 - 18"
       }
     ]
   },
@@ -492,32 +430,25 @@
     "availableSlotsPerDay": 7,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 16,
-        "end": 17
+        "timeSolt": "16 - 17"
       }
     ]
   },
@@ -547,28 +478,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       }
     ]
   },
@@ -598,20 +523,16 @@
     "availableSlotsPerDay": 4,
     "availableTimeSlots": [
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       }
     ]
   },
@@ -641,32 +562,25 @@
     "availableSlotsPerDay": 7,
     "availableTimeSlots": [
       {
-        "start": 8,
-        "end": 9
+        "timeSolt": "8- 9"
       },
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 15,
-        "end": 16
+        "timeSolt": "15 - 16"
       }
     ]
   },
@@ -696,24 +610,19 @@
     "availableSlotsPerDay": 5,
     "availableTimeSlots": [
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "9 - 10"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 12,
-        "end": 13
+        "timeSolt": "12 - 13"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "14 - 15"
       }
     ]
   },
@@ -721,7 +630,7 @@
     "id": 15,
     "name": "Sofia Patterson",
     "status": "trainer",
-    "email": "sofia@johsofiapattersonndoe.com",
+    "email": "sofiapatterson@johsofiapattersonndoe.com",
     "skills": [
       "Fitness Training",
       "Fitness Training",
@@ -743,36 +652,25 @@
     "availableSlotsPerDay": 8,
     "availableTimeSlots": [
       {
-        "start": 8,
-        "end": 9
+        "timeSolt": "8 - 9"
       },
       {
-        "start": 9,
-        "end": 10
+        "timeSolt": "10 - 11"
       },
       {
-        "start": 10,
-        "end": 11
+        "timeSolt": "11 - 12"
       },
       {
-        "start": 11,
-        "end": 12
+        "timeSolt": "13 - 14"
       },
       {
-        "start": 13,
-        "end": 14
+        "timeSolt": "14 - 15"
       },
       {
-        "start": 14,
-        "end": 15
+        "timeSolt": "15 - 16"
       },
       {
-        "start": 15,
-        "end": 16
-      },
-      {
-        "start": 16,
-        "end": 17
+        "timeSolt": "16 - 17"
       }
     ]
   }

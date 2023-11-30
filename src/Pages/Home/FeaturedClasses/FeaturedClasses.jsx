@@ -1,15 +1,12 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import AdsBanner from "../../Component/AdsBanner/AdsBanner";
-import WeeklySchedule from "./WeeklySchedule/WeeklySchedule";
 import { Link } from "react-router-dom";
 
 
 
 
 
-
-const Classes = () => {
+const FeaturedClasses = () => {
     const [classNames, setclassNames] = useState([])
 
     useEffect(() => {
@@ -19,27 +16,31 @@ const Classes = () => {
     }, [])
     console.log(classNames);
 
+    const limitedClassNames = classNames.slice(0, 6);
 
 
-    
     return (
-        <div style={{ backgroundImage: "url('https://i.ibb.co/vqgM44m/21937225-gym-banner-12.jpg')" }}>
-            <AdsBanner></AdsBanner>
-            <WeeklySchedule></WeeklySchedule>
+        <div style={{
+            backgroundImage: "url('https://i.ibb.co/hMdZZSC/5614080-2902410.jpg')",
+            backgroundAttachment: 'fixed',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }}>
+
 
 
 
 
             <div className="">
-                <h2 className="sm:text-6xl max-w-6xl text-2xl py-10 font-extrabold mb-16 bg-gradient-to-r text-from-white to-black shadow-2xl p-5 border-r-4 rounded-lg">OUR CLASSES</h2>
+                <h2  className="sm:text-6xl  max-w-6xl text-3xl lg:py-10 font-extrabold mb-16 text-gray-400 shadow-2xl p-5 border-r-4 rounded-lg">FEATURED CLASSES</h2>
 
                 <div>
 
                     <div
 
-                        className="grid lg:grid-cols-3 grid-cols-1 container mx-auto gap-10 py-32">
+                        className="grid lg:grid-cols-3 grid-cols-1 container mx-auto gap-10 lg:py-32">
                         {
-                            classNames.map((className) => <div key={className._id}>
+                            limitedClassNames.map((className) => <div key={className._id}>
                                 <Link
                                     to={`/classeDetail/${className._id}`}>
                                     <div className="w-full h-56 lg:h-60 rounded-xl flex justify-center items-center focus:outline-none bg-gradient-to-tr from-indigo-500 to-blue-500">
@@ -59,4 +60,4 @@ const Classes = () => {
     );
 };
 
-export default Classes;
+export default FeaturedClasses;

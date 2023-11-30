@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import AdsBanner from "../../../Component/AdsBanner/AdsBanner";
 
 const ClasseDetails = () => {
@@ -26,7 +26,11 @@ const ClasseDetails = () => {
                             <p className="text-center text-lg py-3">
                             <span className="font-semibold">Details</span> : {className.details}</p>
                             <div className="text-center">
+                                <Link
+                                to="/trainer"
+                                >
                                 <button className="rounded-xl bg-black px-24 py-2 text-white">Join Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
