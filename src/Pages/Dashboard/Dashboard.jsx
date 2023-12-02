@@ -5,12 +5,16 @@ import { MdAddComment, MdManageAccounts, MdManageHistory } from "react-icons/md"
 import { IoAddCircleSharp, IoSettingsSharp } from "react-icons/io5";
 import { IoIosLogOut } from "react-icons/io";
 import { AiOutlineNotification } from "react-icons/ai";
+import useAdmin from "../../Hooks/useAdmin";
 
 const Dashboard = () => {
 
-    const admin = true;
-    const trainer = true;
-    const member = true;
+    // const admin = true;
+    const trainer = false;
+    const member = false;
+
+
+    const [isAdmin] = useAdmin()
     return (
         <div
             style={{ backgroundImage: "url('https://i.ibb.co/PZ78Jn9/21937225-gym-banner-12-2.jpg')" }}
@@ -21,8 +25,13 @@ const Dashboard = () => {
                     <img className="w-20 h-20 flex items-center justify-center" src="/powerUplogo-removebg-preview.png" alt="" />
                     <h1 className="text-3xl py-2 font-serif text-black font-bold">Power<span className="text-blue-600 text-4xl">Up</span></h1>
                 </div>
+
+
+
+
+
                 {
-                    admin && <div className="flex flex-col min-h-fit gap-5">
+                    isAdmin && <div className="flex flex-col min-h-fit gap-5">
                         <NavLink
                             to='/'
                         >
@@ -78,6 +87,15 @@ const Dashboard = () => {
 
                 }
 
+
+
+
+
+
+
+
+
+
                 {
                     trainer &&
                     <div className="flex flex-col min-h-fit gap-5">
@@ -125,6 +143,14 @@ const Dashboard = () => {
 
                     </div>
                 }
+
+
+
+
+
+
+
+
                 {
                     member && <div className="flex flex-col min-h-fit gap-5">
                         <NavLink

@@ -285,7 +285,7 @@ const NavBar = () => {
                             <NavListMenu />
 
                             :
-                            <Link to="/signIn"><Button className="bg-blue-gray-50 hover:bg-blue-gray-100" variant="text" size="sm" color="blue-gray">
+                            <Link to="/login"><Button className="bg-blue-gray-50 hover:bg-blue-gray-100" variant="text" size="sm" color="blue-gray">
                                 Log In
                             </Button> </Link>
                     }

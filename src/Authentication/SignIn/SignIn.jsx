@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 
 
 
@@ -63,21 +64,24 @@ const SignIn = () => {
 
 
     return (
-        <div>
-
+        <div
+        style={{ backgroundImage: "url('https://i.ibb.co/W3JJBw9/5850167-3000208.jpg')" }}
+        className="bg-cover bg-center h-screen p-6 mx-auto bg-indigo-600 rounded-md shadow-md dark:bg-gray-800">
             {/* <!-- component --> */}
             {/* <!-- page --> */}
+            <div>
             <div
-                className="mx-auto flex min-h-screen w-full items-center justify-center bg-gray-900 text-white"
-            >
+                className="mx-auto flex min-h-screen w-full items-center justify-center  text-white"
+                >
                 {/* <!-- component --> */}
+                    
                 <form
                     onSubmit={handleSubmit(onSubmit)}
-                    className="flex w-[30rem] flex-col space-y-10">
-                    <div className="text-center text-4xl font-medium">SignIn</div>
+                    className="flex w-[30rem] flex-col space-y-10  rounded-lg p-10 shadow-2xl bg-black bg-opacity-30 backdrop-blur">
+                    <div className="text-center text-4xl font-medium border-2 rounded-lg">SignIn</div>
 
 
-
+                    <SocialLogin></SocialLogin>
                     <div
                         className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500"
                     >
@@ -127,16 +131,17 @@ const SignIn = () => {
 
 
                     <p className="text-center text-lg">
-                        Have account ?
+                        Create an account ?
 
                         <Link
                             to='/signUp'
                             href="#"
-                            className="font-medium text-indigo-500 underline-offset-4 hover:underline"
-                        > Login
+                            className="font-medium text-indigo-300 underline-offset-4 hover:underline"
+                        >  SignUP
                         </Link>
                     </p>
                 </form>
+            </div>
             </div>
         </div>
     );

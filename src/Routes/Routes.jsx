@@ -126,7 +126,7 @@ export const router = createBrowserRouter([
     /**Authentication Route**/
 
     {
-        path: '/signIn',
+        path: '/login',
         element: <SignIn></SignIn>
     },
     {
