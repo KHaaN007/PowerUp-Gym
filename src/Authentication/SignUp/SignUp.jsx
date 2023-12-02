@@ -35,6 +35,7 @@ const SignUp = () => {
     const { createUser, updateUserProfile } = useContext(AuthContext)
 
     const onSubmit = async (data) => {
+        console.log(data)
 
         // upload to imagebb and get a url}
         const imageFile = { image: data.image[0] }
@@ -43,53 +44,56 @@ const SignUp = () => {
                 'content-type': 'multipart/form-data'
             }
         })
+        console.log(res.data);
+        if (res.data.success) {
 
-
-
-        console.log(data);
-        createUser(data.email, data.password)
-            .then(result => {
-                // Update User 
-                setUser((prevUser) => {
-                    prevUser.displayName = data.name;
-                    prevUser.photoURL = res.data.data.display_url;
-                    return { ...prevUser };
+            createUser(data.email, data.password)
+                .then(result => {
+                    console.log(result.user);
+                    updateUserProfile(data.name, res.data.data.display_url)
+                        .then(() => {
+                            setUser((prevUser) => {
+                                prevUser.displayName = data.name;
+                                prevUser.photoURL = res.data.data.display_url;
+                                return { ...prevUser };
+                            })
+                            // create user entry in database
+                            const userInfo = {
+                                name: data.name,
+                                email: data.email,
+                                role: 'member'
+                            }
+                            axiosPublic.post('/users', userInfo)
+                                .then(res => {
+                                    if (res.data.insertedId) {
+                                        reset();
+                                        Swal.fire({
+                                            position: "center",
+                                            icon: "success",
+                                            title: "User created successfully",
+                                            showConfirmButton: false,
+                                            timer: 1500
+                                        });
+                                    }
+                                    navigate('/');
+                                })
+                        })
+                        .catch(() => {
+                            console.log('error');
+                        })
+                })
+                .catch(error => {
+                    console.error(error)
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Email already in use!",
+                        footer: '<a href="#">Try with a different email adress</a>'
+                    });
                 })
 
-                const loggedUser = result.user;
-                console.log(loggedUser);
-                updateUserProfile(data.name, data.photoURL)
-                    .then(() => {
-                        // console.log('user Profile Info Update');
+        }
 
-                        // Create User Entry In the DataBase 
-                        const userInfo = {
-                            name: data.name,
-                            email: data.email,
-                            role: 'member'
-                        }
-
-
-
-
-                        axiosPublic.post('/users', userInfo)
-                            .then(res => {
-                                if (res.data.insertedId) {
-                                    console.log("Data Inserted");
-                                    reset()
-                                    Swal.fire({
-                                        position: "top-end",
-                                        icon: "success",
-                                        title: "User Create Successfully",
-                                        showConfirmButton: false,
-                                        timer: 1500
-                                    });
-                                }
-                            })
-                        navigate('/')
-
-                    })
-            })
     }
 
 

@@ -3,6 +3,7 @@ import { useState } from "react";
 import AdsBanner from "../../Component/AdsBanner/AdsBanner";
 import WeeklySchedule from "./WeeklySchedule/WeeklySchedule";
 import { Link } from "react-router-dom";
+import useClasses from "../../Hooks/useClasses";
 
 
 
@@ -10,18 +11,13 @@ import { Link } from "react-router-dom";
 
 
 const Classes = () => {
-    const [classNames, setclassNames] = useState([])
+  
 
-    useEffect(() => {
-        fetch('http://localhost:5000/classes')
-            .then(res => res.json())
-            .then(data => setclassNames(data))
-    }, [])
-    console.log(classNames);
+    const [classes] = useClasses()
 
 
 
-    
+
     return (
         <div style={{ backgroundImage: "url('https://i.ibb.co/vqgM44m/21937225-gym-banner-12.jpg')" }}>
             <AdsBanner></AdsBanner>
@@ -39,7 +35,7 @@ const Classes = () => {
 
                         className="grid lg:grid-cols-3 grid-cols-1 container mx-auto gap-10 py-32">
                         {
-                            classNames.map((className) => <div key={className._id}>
+                            classes.map((className) => <div key={className._id}>
                                 <Link
                                     to={`/classeDetail/${className._id}`}>
                                     <div className="w-full h-56 lg:h-60 rounded-xl flex justify-center items-center focus:outline-none bg-gradient-to-tr from-indigo-500 to-blue-500">

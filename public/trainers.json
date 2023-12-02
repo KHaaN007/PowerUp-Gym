@@ -5,15 +5,13 @@
     "status": "trainer",
     "email": "john@johndoe.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+    
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
       "Bodyweight Exercises",
-      "Barre Workouts",
-      "Kettlebell Training",
-      "Aquatic Fitness"
+      "Barre Workouts"
+     
     ],
     "profileImage": "https://i.ibb.co/ZVwbVqm/handsome-man-is-engaged-gym.jpg",
     "experience": 8,
@@ -50,8 +48,7 @@
     "status": "trainer",
     "email": "emaily@emilysmith.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+      
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
@@ -70,16 +67,16 @@
     "availableSlotsPerDay": 4,
     "availableTimeSlots": [
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       }
     ]
   },
@@ -89,12 +86,9 @@
     "status": "trainer",
     "email": "michael@michaeljohnson.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+      
       "Weightlifting",
       "Martial Arts",
-      "Nutrition Counseling",
-      "Bodyweight Exercises",
       "Barre Workouts",
       "Kettlebell Training",
       "Aquatic Fitness"
@@ -109,25 +103,25 @@
     "availableSlotsPerDay": 7,
     "availableTimeSlots": [
       {
-        "timeSolt": "8- 9"
+        "timeSolt": "8:00 AM - 9:00 AM"
       },
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       }
     ]
   },
@@ -137,14 +131,10 @@
     "status": "trainer",
     "email": "miranda@mirandacohen.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
       "Bodyweight Exercises",
-      "Barre Workouts",
-      "Kettlebell Training",
       "Aquatic Fitness"
     ],
     "profileImage": "https://i.ibb.co/4FCm6pm/398606307-306253208916007-4473740068670943918-n.jpg",
@@ -157,19 +147,19 @@
     "availableSlotsPerDay": 5,
     "availableTimeSlots": [
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "12 - 13"
+        "timeSolt": "12:00 PM - 1:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       }
     ]
   },
@@ -179,14 +169,10 @@
     "status": "trainer",
     "email": "alex@alexwilliams.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
       "Bodyweight Exercises",
-      "Barre Workouts",
-      "Kettlebell Training",
       "Aquatic Fitness"
     ],
     "profileImage": "https://i.ibb.co/jzbmwLL/young-adult-doing-indoor-sport-gym.jpg",
@@ -199,25 +185,25 @@
     "availableSlotsPerDay": 8,
     "availableTimeSlots": [
       {
-        "timeSolt": "8 - 9"
+        "timeSolt": "8:00 AM - 9:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "16 - 17"
+        "timeSolt": "4:00 PM - 5:00 PM"
       }
     ]
   },
@@ -227,12 +213,10 @@
     "status": "trainer",
     "email": "olivia@oliviabrown.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+      
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
-      "Bodyweight Exercises",
       "Barre Workouts",
       "Kettlebell Training",
       "Aquatic Fitness"
@@ -247,22 +231,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "12 - 13"
+        "timeSolt": "12:00 PM - 1:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "16 - 17"
+        "timeSolt": "4:00 PM - 5:00 PM"
       }
     ]
   },
@@ -272,13 +256,10 @@
     "status": "trainer",
     "email": "daniel@danielgarcia.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+     
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
-      "Bodyweight Exercises",
-      "Barre Workouts",
       "Kettlebell Training",
       "Aquatic Fitness"
     ],
@@ -292,19 +273,19 @@
     "availableSlotsPerDay": 5,
     "availableTimeSlots": [
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "16 - 17"
+        "timeSolt": "4:00 PM - 5:00 PM"
       }
     ]
   },
@@ -314,8 +295,6 @@
     "status": "trainer",
     "email": "gia@gialie.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
@@ -334,28 +313,28 @@
     "availableSlotsPerDay": 9,
     "availableTimeSlots": [
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "12 - 13"
+        "timeSolt": "12:00 PM - 1:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "16 - 17"
+        "timeSolt": "4:00 PM - 5:00 PM"
       },
       {
-        "timeSolt": "17 - 18"
+        "timeSolt": "5:00 PM - 6:00 PM"
       }
     ]
   },
@@ -365,15 +344,11 @@
     "status": "trainer",
     "email": "liam@liamwilson.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
       "Bodyweight Exercises",
-      "Barre Workouts",
-      "Kettlebell Training",
-      "Aquatic Fitness"
+      "Barre Workouts"
     ],
     "profileImage": "https://i.ibb.co/9GXP1XT/confident-sportsman-with-headphones-jumping-rope.jpg",
     "experience": 4,
@@ -385,22 +360,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "12 - 13"
+        "timeSolt": "12:00 PM - 1:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "17 - 18"
+        "timeSolt": "5:00 PM - 6:00 PM"
       }
     ]
   },
@@ -430,25 +405,25 @@
     "availableSlotsPerDay": 7,
     "availableTimeSlots": [
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "16 - 17"
+        "timeSolt": "4:00 PM - 5:00 PM"
       }
     ]
   },
@@ -458,14 +433,10 @@
     "status": "trainer",
     "email": "daniel@danielthompson.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
       "Bodyweight Exercises",
-      "Barre Workouts",
-      "Kettlebell Training",
       "Aquatic Fitness"
     ],
     "profileImage": "https://i.ibb.co/2NyyKzf/front-view-male-training-with-weights.jpg",
@@ -478,22 +449,22 @@
     "availableSlotsPerDay": 6,
     "availableTimeSlots": [
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       }
     ]
   },
@@ -503,12 +474,8 @@
     "status": "trainer",
     "email": "noah@noahroberts.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
-      "Nutrition Counseling",
-      "Bodyweight Exercises",
       "Barre Workouts",
       "Kettlebell Training",
       "Aquatic Fitness"
@@ -523,16 +490,16 @@
     "availableSlotsPerDay": 4,
     "availableTimeSlots": [
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       }
     ]
   },
@@ -542,14 +509,12 @@
     "status": "trainer",
     "email": "mia@miaclark.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+     
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
       "Bodyweight Exercises",
       "Barre Workouts",
-      "Kettlebell Training",
       "Aquatic Fitness"
     ],
     "profileImage": "https://i.ibb.co/dMsFvZp/medium-shot-beautiful-woman-with-dumbbells.jpg",
@@ -562,25 +527,25 @@
     "availableSlotsPerDay": 7,
     "availableTimeSlots": [
       {
-        "timeSolt": "8- 9"
+        "timeSolt": "8:00 AM - 9:00 AM"
       },
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       }
     ]
   },
@@ -590,8 +555,7 @@
     "status": "trainer",
     "email": "william@williamhall.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
+      
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
@@ -610,19 +574,19 @@
     "availableSlotsPerDay": 5,
     "availableTimeSlots": [
       {
-        "timeSolt": "9 - 10"
+        "timeSolt": "9:00 AM - 10:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "12 - 13"
+        "timeSolt": "12:00 PM - 1:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       }
     ]
   },
@@ -632,12 +596,9 @@
     "status": "trainer",
     "email": "sofiapatterson@johsofiapattersonndoe.com",
     "skills": [
-      "Fitness Training",
-      "Fitness Training",
       "Weightlifting",
       "Martial Arts",
       "Nutrition Counseling",
-      "Bodyweight Exercises",
       "Barre Workouts",
       "Kettlebell Training",
       "Aquatic Fitness"
@@ -652,25 +613,25 @@
     "availableSlotsPerDay": 8,
     "availableTimeSlots": [
       {
-        "timeSolt": "8 - 9"
+        "timeSolt": "8:00 AM - 9:00 AM"
       },
       {
-        "timeSolt": "10 - 11"
+        "timeSolt": "10:00 AM - 11:00 AM"
       },
       {
-        "timeSolt": "11 - 12"
+        "timeSolt": "11:00 AM - 12:00 PM"
       },
       {
-        "timeSolt": "13 - 14"
+        "timeSolt": "1:00 PM - 2:00 PM"
       },
       {
-        "timeSolt": "14 - 15"
+        "timeSolt": "2:00 PM - 3:00 PM"
       },
       {
-        "timeSolt": "15 - 16"
+        "timeSolt": "3:00 PM - 4:00 PM"
       },
       {
-        "timeSolt": "16 - 17"
+        "timeSolt": "4:00 PM - 5:00 PM"
       }
     ]
   }

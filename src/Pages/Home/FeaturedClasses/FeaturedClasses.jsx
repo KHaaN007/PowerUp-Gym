@@ -1,22 +1,16 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import useClasses from "../../../Hooks/useClasses";
 
 
 
 
 
 const FeaturedClasses = () => {
-    const [classNames, setclassNames] = useState([])
 
-    useEffect(() => {
-        fetch('http://localhost:5000/classes')
-            .then(res => res.json())
-            .then(data => setclassNames(data))
-    }, [])
-    console.log(classNames);
+    const [classes] = useClasses()
 
-    const limitedClassNames = classNames.slice(0, 6);
+
+    const limitedclasses = classes.slice(0, 6);
 
 
     return (
@@ -32,7 +26,7 @@ const FeaturedClasses = () => {
 
 
             <div className="">
-                <h2  className="sm:text-6xl  max-w-6xl text-3xl lg:py-10 font-extrabold mb-16 text-gray-400 shadow-2xl p-5 border-r-4 rounded-lg">FEATURED CLASSES</h2>
+                <h2 className="sm:text-6xl  max-w-6xl text-3xl lg:py-10 font-extrabold mb-16 text-gray-400 shadow-2xl p-5 border-r-4 rounded-lg">FEATURED CLASSES</h2>
 
                 <div>
 
@@ -40,7 +34,7 @@ const FeaturedClasses = () => {
 
                         className="grid lg:grid-cols-3 grid-cols-1 container mx-auto gap-10 lg:py-32">
                         {
-                            limitedClassNames.map((className) => <div key={className._id}>
+                            limitedclasses.map((className) => <div key={className._id}>
                                 <Link
                                     to={`/classeDetail/${className._id}`}>
                                     <div className="w-full h-56 lg:h-60 rounded-xl flex justify-center items-center focus:outline-none bg-gradient-to-tr from-indigo-500 to-blue-500">

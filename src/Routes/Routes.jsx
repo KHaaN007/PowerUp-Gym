@@ -22,7 +22,7 @@ import Balance from "../Dashboard/Admin/Balance/Balance";
 import ManageSlots from "../Dashboard/Trainer/ManageSlots/ManageSlots";
 import ManageMember from "../Dashboard/Trainer/ManageMember/ManageMember";
 import AddNewForum from "../Dashboard/Trainer/AddNewForum/AddNewForum";
-import AddNewClass from "../Dashboard/Trainer/AddNewClass/AddNewClass";
+import AddClass from "../Dashboard/Trainer/AddNewClass/AddClass";
 
 
 
@@ -116,7 +116,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:'addNewClass',
-                element:<AddNewClass></AddNewClass>
+                element:<AddClass></AddClass>
             },
         ]
     },

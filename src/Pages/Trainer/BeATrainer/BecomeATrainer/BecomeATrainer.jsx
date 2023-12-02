@@ -36,23 +36,16 @@ const BecomeATrainer = () => {
                 email: user.email,
                 age: data.email,
                 status: 'Applied Trainer',
-                availableTimeInAweek: data.availableTimeInAweek,
-                availableTimeInADay: data.availableTimeInADay,
-                availableTimeSlots: [
-                    {
-                        start: data.start,
-                        end: data.end
-                    },
-                ],
+                availableTimeInAweek: parseInt(data.availableTimeInAweek),
+                availableSlotsPerDay: parseInt(data.availableTimeInADay),
+                availableTimeSlots: data.timeSolt.map(time => ({ "timeSolt": time })),
                 skills: data.skills,
-                experience: data.experience,
+                experience: parseInt(data.experience),
                 profileImage: res.data.data.display_url,
             }
-            // console.log(beAtrainer);
+
             const beAtrainerRes = await axiosSecure.post('/beAtrainer', beAtrainer)
-            // console.log(beAtrainerRes);
             if (beAtrainerRes.data.insertedId) {
-                // Show Success PopUp
                 reset()
                 Swal.fire({
                     position: "top-end",
@@ -127,24 +120,24 @@ const BecomeATrainer = () => {
                             {...register("availableTimeInADay",)}
                             label="Available Time in a Day" />
                     </div>
-                    <div className="full">
+                    <div className=" bg-transparent shadow-2xl py-2 rounded-xl">
                         <h1 className="text-white text-xl">Add Your Skills</h1>
                         <label>
                             <input
                                 className="my-5"
                                 type="checkbox"
-                                value="Fitness Training"
+                                value="Fitness"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-10  text-white ">Fitness Training</span>
+                            <span className="text-lg ml-2 mr-5 text-gray-400 ">Fitness</span>
                         </label>
                         <label>
                             <input
                                 type="checkbox"
-                                value="Fitness Training"
+                                value="Yoga"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Yoga</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Yoga</span>
                         </label>
                         <label>
                             <input
@@ -152,7 +145,7 @@ const BecomeATrainer = () => {
                                 value="Weightlifting"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Weightlifting</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Weightlifting</span>
                         </label>
                         <label>
                             <input
@@ -160,7 +153,7 @@ const BecomeATrainer = () => {
                                 value="Martial Arts"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Martial Arts</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Martial Arts</span>
                         </label>
                         <label>
                             <input
@@ -168,15 +161,15 @@ const BecomeATrainer = () => {
                                 value="Nutrition Counseling"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Nutrition Counseling</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Nutrition Counseling</span>
                         </label>
                         <label>
                             <input
                                 type="checkbox"
-                                value="Bodyweight Exercises"
+                                value="Bodyweight"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Bodyweight Exercises</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Bodyweight</span>
                         </label>
                         <label>
                             <input
@@ -184,7 +177,7 @@ const BecomeATrainer = () => {
                                 value="Barre Workouts"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Barre Workouts</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Barre Workouts</span>
                         </label>
                         <label>
                             <input
@@ -192,7 +185,7 @@ const BecomeATrainer = () => {
                                 value="Kettlebell Training"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Kettlebell Training</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Kettlebell Training</span>
                         </label>
                         <label>
                             <input
@@ -200,230 +193,109 @@ const BecomeATrainer = () => {
                                 value="Aquatic Fitness"
                                 {...register("skills")}
                             />
-                            <span className="text-xl ml-2 mr-5 text-white">Aquatic Fitness</span>
+                            <span className="text-lg ml-2 mr-4 text-gray-400">Aquatic Fitness</span>
                         </label>
                     </div>
 
 
                     <div>
                         <h1 className="text-white text-xl">Add Your Schedule</h1>
-                        <div className="full flex gap-2">
+                        <div>
 
-                            <div>
+                            <div className="full flex gap-8 flex-wrap bg-transparent shadow-2xl py-2 rounded-xl">
                                 <label>
                                     <input
                                         className="my-5"
                                         type="checkbox"
-                                        value="9"
-                                        {...register("start")}
+                                        value="8:00AM - 9:00PM"
+                                        {...register("timeSolt")}
                                     />
-                                    <span className="text-2xl  ml-2  text-white ">9</span>
+                                    <span className="text-lg ml-2 text-gray-400 ">8:00AM - 9:00PM</span>
                                 </label>
-                                <p className="inline-block text-white mx-2">to</p>
                                 <label>
                                     <input
                                         className="my-5"
                                         type="checkbox"
-                                        value="10"
-                                        {...register("end")}
+                                        value="9:00AM - 10:00PM"
+                                        {...register("timeSolt")}
                                     />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">10</span>
+                                    <span className="text-lg ml-2 text-gray-400 ">9:00AM - 10:00PM</span>
                                 </label>
-                                <p className="text-2xl text-white ml-10">or</p>
                                 <label>
                                     <input
                                         className="my-5"
                                         type="checkbox"
-                                        value="10"
-                                        {...register("start")}
+                                        value="10:00AM - 11:00PM"
+                                        {...register("timeSolt")}
                                     />
-                                    <span className="text-2xl  ml-2  text-white ">10</span>
+                                    <span className="text-lg ml-2 text-gray-400 ">10:00AM - 11:00PM</span>
                                 </label>
-                                <p className="inline-block text-white mx-2">to</p>
                                 <label>
                                     <input
                                         className="my-5"
                                         type="checkbox"
-                                        value="11"
-                                        {...register("11")}
+                                        value="11:00AM - 12:00PM"
+                                        {...register("timeSolt")}
                                     />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">11</span>
+                                    <span className="text-lg ml-2 text-gray-400 ">11:00AM - 12:00PM</span>
+                                </label>
+                                <label>
+                                    <input
+                                        className="my-"
+                                        type="checkbox"
+                                        value="12:00PM - 1:00PM"
+                                        {...register("timeSolt")}
+                                    />
+                                    <span className="text-lg ml-2 text-gray-400 ">12:00PM - 1:00PM</span>
+                                </label>
+                                <label>
+                                    <input
+                                        className="my-"
+                                        type="checkbox"
+                                        value="1:00PM - 2:00PM"
+                                        {...register("timeSolt")}
+                                    />
+                                    <span className="text-lg ml-2 text-gray-400 ">1:00PM - 2:00PM</span>
+                                </label>
+                                <label>
+                                    <input
+                                        className="my-"
+                                        type="checkbox"
+                                        value="1:00PM - 2:00PM"
+                                        {...register("timeSolt")}
+                                    />
+                                    <span className="text-lg ml-2 text-gray-400 ">2:00PM - 3:00PM</span>
+                                </label>
+                                <label>
+                                    <input
+                                        className="my-"
+                                        type="checkbox"
+                                        value="1:00PM - 2:00PM"
+                                        {...register("timeSolt")}
+                                    />
+                                    <span className="text-lg ml-2 text-gray-400 ">3:00PM - 4:00PM</span>
+                                </label>
+                                <label>
+                                    <input
+                                        className="my-"
+                                        type="checkbox"
+                                        value="1:00PM - 2:00PM"
+                                        {...register("timeSolt")}
+                                    />
+                                    <span className="text-lg ml-2 text-gray-400 ">4:00PM - 5:00PM</span>
+                                </label>
+                                <label>
+                                    <input
+                                        className="my-"
+                                        type="checkbox"
+                                        value="1:00PM - 2:00PM"
+                                        {...register("timeSolt")}
+                                    />
+                                    <span className="text-lg ml-2 text-gray-400 ">5:00PM - 6:00PM</span>
                                 </label>
                             </div>
-                            <div>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="11"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">11</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="12"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">12</span>
-                                </label>
-                                <p className="text-2xl text-white ml-10">or</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="12"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">12</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="13"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">13</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="13"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">13</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="14"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">14</span>
-                                </label>
-                                <p className="text-2xl text-white ml-10">or</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="14"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">14</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="15"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">15</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="15"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">15</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="16"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">16</span>
-                                </label>
-                                <p className="text-2xl text-white ml-10">or</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="16"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">16</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="17"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">17</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="17"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">17</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="18"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">18</span>
-                                </label>
-                                <p className="text-2xl text-white ml-10">or</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="18"
-                                        {...register("start")}
-                                    />
-                                    <span className="text-2xl  ml-2  text-white ">18</span>
-                                </label>
-                                <p className="inline-block text-white mx-2">to</p>
-                                <label>
-                                    <input
-                                        className="my-5"
-                                        type="checkbox"
-                                        value="19"
-                                        {...register("end")}
-                                    />
-                                    <span className="text-2xl mr-4 ml-2  text-white ">19</span>
-                                </label>
-                            </div>
-
-
-
-
-
                         </div>
                     </div>
-
-
-
                     <div
                         className="w-full transform  bg-transparent text-lg duration-300 focus-within:border-indigo-500"
                     >
@@ -438,7 +310,7 @@ const BecomeATrainer = () => {
                     </div>
                     <div>
                         <button className="btn text-2xl px-6  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">
-                            Submit
+                            Apply
                         </button>
                     </div>
                 </form>
