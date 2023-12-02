@@ -9,25 +9,27 @@ AOS.init();
 
 const Trainer = () => {
 
-const [trainers]=useTrainer()
+    const [trainers] = useTrainer()
 
 
+    console.log(trainers);
 
+    const filterTrainers = trainers.filter(trainer => trainer.status === 'trainer')
 
     return (
         <div>
-       
+
 
             <div data-aos="fade-down" className=" md:px-6 gap-10 py-10  grid lg:grid-cols-2 grid-cols-1">
                 {
-                    trainers.map(trainer => <div key={trainer._id} className="mb-32 text-center rounded-xl shadow-2xl lg:text-left bg-gradient-to-r from-indigo-700 to-purple-400">
+                    filterTrainers.map(trainer => <div key={trainer._id} className="mb-32 text-center rounded-xl shadow-2xl lg:text-left bg-gradient-to-r from-indigo-700 to-purple-400">
                         <div className="py-12 md:px-6 md:px-12">
                             <div className="">
                                 <div className="flex grid items-center lg:grid-cols-2">
                                     <div className="mb-12 md:mt-12 lg:mt-0 lg:mb-0 ">
                                         <div
                                             className="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[25px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-12 lg:-mr-14">
-                                            <h2 className="mb-2 text-3xl font-bold text-primary dark:text-primary-400">
+                                            <h2 className="mb-2 text-3xl font-bold font-serif dark:text-primary-400 text-white">
                                                 {trainer.name}
                                             </h2>
                                             <button disabled type="button"
@@ -43,7 +45,7 @@ const [trainers]=useTrainer()
                                             </button>
 
 
-                                            <button disabled className="btn text-2xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">Available Slot Per Day {trainer.availableSlotsPerDay}</button>
+                                            <button disabled className=" text-2xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">Available Slot Per Day {trainer.availableSlotsPerDay}</button>
 
                                             {/* Social Icon */}
                                             <div>
@@ -85,7 +87,7 @@ const [trainers]=useTrainer()
                                             </div>
 
                                             <Link to={`/trainerDetail/${trainer._id}`}>
-                                                <button className="relative mt-8 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all rounded-lg duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
+                                                <button className="btn border-0 relative mt-8 flex h-[50px] w-40 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all rounded-lg duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
                                                     <span className="relative z-10">Know More</span>
                                                 </button>
                                             </Link>

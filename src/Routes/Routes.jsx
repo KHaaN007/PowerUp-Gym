@@ -23,6 +23,7 @@ import ManageSlots from "../Dashboard/Trainer/ManageSlots/ManageSlots";
 import ManageMember from "../Dashboard/Trainer/ManageMember/ManageMember";
 import AddNewForum from "../Dashboard/Trainer/AddNewForum/AddNewForum";
 import AddClass from "../Dashboard/Trainer/AddNewClass/AddClass";
+import AppliedModal from "../Dashboard/Admin/AppliedTrainer/AppliedModal";
 
 
 
@@ -118,6 +119,7 @@ export const router = createBrowserRouter([
                 path:'addNewClass',
                 element:<AddClass></AddClass>
             },
+          
         ]
     },
 

@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
-import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+// import useAxiosPublic from "../../../Hooks/useAxiosPublic";
+import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 
 const AllSubscribers = () => {
-    const axiosPublic = useAxiosPublic();
+    // const axiosPublic = useAxiosPublic();
     const [subscribes, setSubscribes] = useState([])
+    const axiosSecure = useAxiosSecure()
 
 
     useEffect(() => {
-        axiosPublic.get('/newsletter')
+        axiosSecure.get('/newsletter')
             .then(res => {
                 console.log(res.data)
                 setSubscribes(res.data)
             })
-    }, [axiosPublic])
+    }, [axiosSecure])
     console.log(subscribes);
 
     return (

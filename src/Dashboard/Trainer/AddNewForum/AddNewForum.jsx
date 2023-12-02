@@ -25,6 +25,9 @@ const AddNewForum = () => {
     console.log(user);
 
 
+
+    const currentDate = new Date();
+
     console.log(trainers);
     const photoUrl = trainers.filter(trainer => trainer.email === user?.email)
 
@@ -36,10 +39,12 @@ const AddNewForum = () => {
         const addForum = {
             title: data.title,
             category: data.category,
-            author: user?.displayName,
-            email: user?.email,
+            author: data.author,
+            email: data.email,
             content: data.content,
-            image: photoUrl.map(photo => photo?.profileImage)
+            image: photoUrl.map(photo => photo?.profileImage),
+            data: currentDate
+
         }
 
         // console.log(addForum);
@@ -50,7 +55,7 @@ const AddNewForum = () => {
             Swal.fire({
                 position: "top-end",
                 icon: "success",
-                title: `${data.name} Your Request Trainer Is Successfully Sent`,
+                title: `${data.author} Your Blog Is Posted`,
                 showConfirmButton: false,
                 timer: 1500
             });
@@ -90,17 +95,17 @@ const AddNewForum = () => {
                         <Input
 
                             color="blue"
-                            defaultValue={user?.displayName}
                             className='text-white'
                             {...register("author",)}
+                            defaultValue={user?.displayName}
                             label="author" />
                     </div>
                     <div className="full">
                         <Input
                             disabled
-                            defaultValue={user?.email}
                             color="blue"
                             className='text-black'
+                            defaultValue={user?.email}
                             {...register("email",)}
                             label="Email" />
                     </div>

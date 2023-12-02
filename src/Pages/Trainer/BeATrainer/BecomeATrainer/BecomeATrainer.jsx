@@ -81,8 +81,8 @@ const BecomeATrainer = () => {
                     </div>
                     <div className="full">
                         <Input
-                            disabled
-                            defaultValue={user?.email}
+                            // disabled
+                            // defaultValue={user?.email}
                             color="blue"
                             className='text-black'
                             {...register("email",)}
@@ -309,7 +309,7 @@ const BecomeATrainer = () => {
                         />
                     </div>
                     <div>
-                        <button className="btn text-2xl px-6  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">
+                        <button className="btn border-0 text-2xl px-6  py-2 bg-gradient-to-r rounded-md shadow-2xl text-white font-serif from-blue-600 to-indigo-900">
                             Apply
                         </button>
                     </div>

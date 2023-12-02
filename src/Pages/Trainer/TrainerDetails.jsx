@@ -7,7 +7,7 @@ const TrainerDetails = () => {
     const data = useLoaderData()
 
 
-    console.log(data.skills);
+    console.log(data);
 
 
 
@@ -43,7 +43,7 @@ const TrainerDetails = () => {
                                         {data.name}
                                     </h2>
 
-                                    <button disabled className="btn text-xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-xl text-white font-serif from-blue-600 to-indigo-900">Season {slot.timeSolt} </button>
+                                    <button disabled className=" text-xl my-5 px-6 disabled  py-2 bg-gradient-to-r rounded-md shadow-xl text-white font-serif from-blue-600 to-indigo-900">Season {slot.timeSolt} </button>
 
                                 </div>
                             </div>

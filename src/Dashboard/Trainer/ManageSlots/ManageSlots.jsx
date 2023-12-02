@@ -1,7 +1,29 @@
+import useAuth from "../../../Hooks/useAuth";
+import useTrainer from "../../../Hooks/useTrainer";
+import TrainerSlots from "./TrainerSlots";
+
 const ManageSlots = () => {
+    const { user } = useAuth()
+    const [trainers] = useTrainer()
+
+    console.log(trainers);
+    console.log(user);
+
+    const trainerSlotEmail = trainers.filter(trainer => trainer.email === user?.email)
+
+    console.log(trainerSlotEmail);
+
+
+
+
     return (
         <div>
-              <h2 className="text-6xl h-screen flex justify-center items-center">This All ManageSlots Page</h2>
+            {
+                trainerSlotEmail.map(slots => <TrainerSlots
+                    key={slots._id}
+                    slots={slots}
+                ></TrainerSlots>)
+            }
         </div>
     );
 };

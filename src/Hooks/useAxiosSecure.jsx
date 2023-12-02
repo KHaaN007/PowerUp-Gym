@@ -26,7 +26,7 @@ const useAxiosSecure = () => {
 
         // console.log('Request Stopped By Interceptors', token);
 
-        config.headers.authorization = `Bearer ${token}`
+        config.headers.Authorization = `Bearer ${token}`
 
 
 
@@ -64,3 +64,10 @@ const useAxiosSecure = () => {
 };
 
 export default useAxiosSecure;
+
+
+
+
+
+
+

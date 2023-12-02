@@ -2,6 +2,8 @@ import { useState } from "react";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { useEffect } from "react";
 import { FaEye } from "react-icons/fa";
+import AppliedModal from "./AppliedModal";
+import { Link } from "react-router-dom";
 
 const AppliedTrainer = () => {
 
@@ -17,7 +19,7 @@ const AppliedTrainer = () => {
     }, [axiosPublic])
 
 
-    const appliedTrainers =trainers.filter(trainer=>trainer.status === 'Applied Trainer')
+    const appliedTrainers = trainers.filter(trainer => trainer.status === 'Applied Trainer')
     // console.log(appliedTrainers);
 
     return (
@@ -39,15 +41,15 @@ const AppliedTrainer = () => {
                                 </tr>
                             </thead>
                             {
-                                appliedTrainers.map(appliedTrainer=><tbody key={appliedTrainer._id}>
+                                appliedTrainers.map(appliedTrainer => <tbody key={appliedTrainer._id}>
                                     <tr>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                        <div className="flex px-2 py-2">
-                                            <div className="flex flex-col justify-center">
-                                            <img className="w-14 rounded-full border-white" src={appliedTrainer.profileImage} alt=""/>
+                                        <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                            <div className="flex px-2 py-2">
+                                                <div className="flex flex-col justify-center">
+                                                    <img className="w-14 rounded-full border-white" src={appliedTrainer.profileImage} alt="" />
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
+                                        </td>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                             <div className="flex px-2 py-1">
                                                 <div className="flex flex-col justify-center">
@@ -57,14 +59,16 @@ const AppliedTrainer = () => {
                                         </td>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                             <p className="mb-0 font-semibold leading-tight text-base">{appliedTrainer.name}</p>
-    
-                                        </td>
-                                        <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                        <button className="mb-0 font-semibold leading-tight text-2xl"><FaEye /></button>
-                                        
 
-                                    </td>
-    
+                                        </td>
+                                        <td onClick={() => document.getElementById(`modal_${appliedTrainer._id}`).showModal()} className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                            <Link>
+                                                <button className="mb-0 font-semibold leading-tight text-2xl"><FaEye /></button>
+                                            </Link>
+                                        </td>
+
+
+                                        <AppliedModal appliedTrainer={appliedTrainer}></AppliedModal>
                                     </tr>
                                 </tbody>)
                             }

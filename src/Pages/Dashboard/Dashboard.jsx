@@ -27,15 +27,15 @@ const Dashboard = () => {
                             to='/'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
-                                <FaHouseChimney className="text-2xl" />Admin Home</h3>
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
+                                    <FaHouseChimney className="text-2xl" />Admin Home</h3>
                             </div>
                         </NavLink>
                         <NavLink
                             to='allSubscribes'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
                                     <BiCaretLeftCircle className="text-2xl" /> All Subscribes</h3>
                             </div>
                         </NavLink>
@@ -43,7 +43,7 @@ const Dashboard = () => {
                             to='allTrainer'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <BiDumbbell className="text-2xl" /> All Trainers</h3>
                             </div>
                         </NavLink>
@@ -51,7 +51,7 @@ const Dashboard = () => {
                             to='appliedTrainer'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <BiRun className="text-2xl" /> Applied Trainer</h3>
                             </div>
                         </NavLink>
@@ -59,9 +59,17 @@ const Dashboard = () => {
                             to='balance'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
 
                                     <FaMoneyCheckDollar className="text-2xl" /> Balance</h3>
+                            </div>
+                        </NavLink>
+                        <NavLink
+                            to='addNewForum'
+                        >
+                            <div>
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                    <MdAddComment className="text-2xl" />  Add new Forum</h3>
                             </div>
                         </NavLink>
 
@@ -73,19 +81,19 @@ const Dashboard = () => {
                 {
                     trainer &&
                     <div className="flex flex-col min-h-fit gap-5">
-                         <NavLink
+                        <NavLink
                             to='/'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
-                                <FaHouseChimney className="text-2xl" />Trainer Home</h3>
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
+                                    <FaHouseChimney className="text-2xl" />Trainer Home</h3>
                             </div>
                         </NavLink>
                         <NavLink
                             to='manageSlots'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <MdManageHistory className="text-2xl" /> Manage Slots</h3>
                             </div>
                         </NavLink>
@@ -93,7 +101,7 @@ const Dashboard = () => {
                             to='manageMember'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <MdManageAccounts className="text-2xl" />  Manage member</h3>
                             </div>
                         </NavLink>
@@ -101,7 +109,7 @@ const Dashboard = () => {
                             to='addNewForum'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <MdAddComment className="text-2xl" />  Add new Forum</h3>
                             </div>
                         </NavLink>
@@ -109,7 +117,7 @@ const Dashboard = () => {
                             to='addNewClass'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <IoAddCircleSharp className="text-2xl" />  Add new Class</h3>
                             </div>
                         </NavLink>
@@ -119,29 +127,29 @@ const Dashboard = () => {
                 }
                 {
                     member && <div className="flex flex-col min-h-fit gap-5">
-                         <NavLink
+                        <NavLink
                             to='/'
                         >
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
-                                <FaHouseChimney className="text-2xl" />Member Home</h3>
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100  flex justify-center items-center gap-2">
+                                    <FaHouseChimney className="text-2xl" />Member Home</h3>
                             </div>
                         </NavLink>
                         <NavLink>
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <IoIosLogOut className="text-2xl" /> Activity Log</h3>
                             </div>
                         </NavLink>
                         <NavLink>
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <IoSettingsSharp className="text-2xl" /> Profile Settings</h3>
                             </div>
                         </NavLink>
                         <NavLink>
                             <div>
-                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
+                                <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <AiOutlineNotification className="text-2xl" /> Recommended Classes</h3>
                             </div>
                         </NavLink>
