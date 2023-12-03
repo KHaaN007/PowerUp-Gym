@@ -34,7 +34,7 @@ const BecomeATrainer = () => {
             const beAtrainer = {
                 name: data.name,
                 email: user.email,
-                age: data.email,
+                age: data.age,
                 status: 'Applied Trainer',
                 availableTimeInAweek: parseInt(data.availableTimeInAweek),
                 availableSlotsPerDay: parseInt(data.availableTimeInADay),
@@ -81,8 +81,8 @@ const BecomeATrainer = () => {
                     </div>
                     <div className="full">
                         <Input
-                            // disabled
-                            // defaultValue={user?.email}
+                            disabled
+                            defaultValue={user?.email}
                             color="blue"
                             className='text-black'
                             {...register("email",)}

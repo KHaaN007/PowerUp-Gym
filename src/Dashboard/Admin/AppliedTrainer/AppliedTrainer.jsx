@@ -4,19 +4,31 @@ import { useEffect } from "react";
 import { FaEye } from "react-icons/fa";
 import AppliedModal from "./AppliedModal";
 import { Link } from "react-router-dom";
+import useUser from "../../../Hooks/useUser";
+import useTrainer from "../../../Hooks/useTrainer";
 
 const AppliedTrainer = () => {
 
-    const axiosPublic = useAxiosPublic();
-    const [trainers, setTrainers] = useState([])
+    const [users] = useUser()
 
 
-    useEffect(() => {
-        axiosPublic.get('/trainers')
-            .then(res => {
-                setTrainers(res.data)
-            })
-    }, [axiosPublic])
+
+
+    // const axiosPublic = useAxiosPublic();
+    // const [trainers, setTrainers] = useState([])
+
+
+    // useEffect(() => {
+    //     axiosPublic.get('/trainers')
+    //         .then(res => {
+    //             setTrainers(res.data)
+    //         })
+    // }, [axiosPublic])
+
+    const [trainers, refetch] = useTrainer()
+
+
+
 
 
     const appliedTrainers = trainers.filter(trainer => trainer.status === 'Applied Trainer')
@@ -68,7 +80,9 @@ const AppliedTrainer = () => {
                                         </td>
 
 
-                                        <AppliedModal appliedTrainer={appliedTrainer}></AppliedModal>
+                                        <AppliedModal
+                                            
+                                            appliedTrainer={appliedTrainer}></AppliedModal>
                                     </tr>
                                 </tbody>)
                             }

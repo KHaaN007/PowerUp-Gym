@@ -6,15 +6,18 @@ import { IoAddCircleSharp, IoSettingsSharp } from "react-icons/io5";
 import { IoIosLogOut } from "react-icons/io";
 import { AiOutlineNotification } from "react-icons/ai";
 import useAdmin from "../../Hooks/useAdmin";
+import useTrainerVerify from "../../Hooks/useTrainerVerify";
 
 const Dashboard = () => {
 
-    // const admin = true;
-    const trainer = false;
-    const member = false;
+    const isAdmin = true;
+    const isTrainer = true;
+    const member = true;
 
 
-    const [isAdmin] = useAdmin()
+
+    // const [isAdmin] = useAdmin()
+    // const [isTrainer] = useTrainerVerify()
     return (
         <div
             style={{ backgroundImage: "url('https://i.ibb.co/PZ78Jn9/21937225-gym-banner-12-2.jpg')" }}
@@ -97,7 +100,7 @@ const Dashboard = () => {
 
 
                 {
-                    trainer &&
+                    isTrainer &&
                     <div className="flex flex-col min-h-fit gap-5">
                         <NavLink
                             to='/'
@@ -144,15 +147,10 @@ const Dashboard = () => {
                     </div>
                 }
 
-
-
-
-
-
-
-
                 {
-                    member && <div className="flex flex-col min-h-fit gap-5">
+                    // !isAdmin && !isTrainer 
+                    member
+                    && <div className="flex flex-col min-h-fit gap-5">
                         <NavLink
                             to='/'
                         >

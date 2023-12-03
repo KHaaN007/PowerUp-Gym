@@ -1,6 +1,7 @@
 import useTrainer from "../../../Hooks/useTrainer";
-import {  FaPaypal } from "react-icons/fa";
+import { FaPaypal } from "react-icons/fa";
 import './AllTrainers.css'
+import { Link } from "react-router-dom";
 
 const AllTrainers = () => {
 
@@ -46,9 +47,12 @@ const AllTrainers = () => {
 
                                     </td>
                                     <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                        <button className="
+                                        <Link to={`/dashboard/payTrainer/${trainer._id}`}>
+                                            <button
+                                                className="
                                         text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-4 hover:scale-100 gap-2
                                         mb-0 border  leading-tight flex justify-center items-center"><FaPaypal></FaPaypal> Pay</button>
+                                        </Link>
 
                                     </td>
 
@@ -63,7 +67,7 @@ const AllTrainers = () => {
             </div>
         </div>
 
- 
+
     );
 };
 

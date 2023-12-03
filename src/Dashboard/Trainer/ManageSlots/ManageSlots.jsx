@@ -6,24 +6,26 @@ const ManageSlots = () => {
     const { user } = useAuth()
     const [trainers] = useTrainer()
 
-    console.log(trainers);
-    console.log(user);
+
 
     const trainerSlotEmail = trainers.filter(trainer => trainer.email === user?.email)
 
-    console.log(trainerSlotEmail);
+
 
 
 
 
     return (
         <div>
-            {
-                trainerSlotEmail.map(slots => <TrainerSlots
-                    key={slots._id}
-                    slots={slots}
-                ></TrainerSlots>)
-            }
+            <h1 className="text-xl">This is Manage Trainer page</h1>
+            <div>
+                {
+                    trainerSlotEmail.map(slots => <TrainerSlots
+                        key={slots._id}
+                        slots={slots}
+                    ></TrainerSlots>)
+                }
+            </div>
         </div>
     );
 };

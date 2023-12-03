@@ -73,7 +73,7 @@ const TrainerPackage = () => {
             <div className="grid lg:grid-cols-3 grid-cols-1 container mx-auto">
                 {
                     slotPackages.map(slotPackage => <div key={slotPackage.id} className="bg-white dark:bg-gray-900" >
-                        <form className="container px-6 py-8 mx-auto">
+                        <div className="container px-6 py-8 mx-auto">
                             <div className="flex flex-col items-center justify-center space-y-8 lg:-mx-4 lg:flex-row lg:items-stretch lg:space-y-0">
 
 
@@ -117,7 +117,7 @@ const TrainerPackage = () => {
 
 
                             </div>
-                        </form>
+                        </div>
                     </div>)
                 }
             </div>

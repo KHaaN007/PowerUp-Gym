@@ -24,6 +24,8 @@ import ManageMember from "../Dashboard/Trainer/ManageMember/ManageMember";
 import AddNewForum from "../Dashboard/Trainer/AddNewForum/AddNewForum";
 import AddClass from "../Dashboard/Trainer/AddNewClass/AddClass";
 import AppliedModal from "../Dashboard/Admin/AppliedTrainer/AppliedModal";
+import DashboardHome from "../Dashboard/DashboardHome";
+import PayTrainer from "../Dashboard/Admin/AllTrainers/PayTrainer";
 
 
 
@@ -73,53 +75,64 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/classeDetail/:id',
-                element: <ClasseDetails></ClasseDetails>, 
+                element: <ClasseDetails></ClasseDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/classesDetail/${params.id}`)
 
-           
+
             }
 
         ]
     },
-   
+
     /**Dashboard Route**/
     {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
-        children:[
+        children: [
             {
-                path:'allSubscribes',
-                element:<AllSubscribers></AllSubscribers>
+                path: '/dashboard',
+                element: <DashboardHome></DashboardHome>
             },
             {
-                path:'allTrainer',
-                element:<AllTrainers></AllTrainers>
+                path: 'allSubscribes',
+                element: <AllSubscribers></AllSubscribers>
             },
             {
-                path:'appliedTrainer',
-                element:<AppliedTrainer></AppliedTrainer>
+                path: 'allTrainer',
+                element: <AllTrainers></AllTrainers>
             },
             {
-                path:'balance',
-                element:<Balance></Balance>
+                path: 'appliedTrainer',
+                element: <AppliedTrainer></AppliedTrainer>
             },
             {
-                path:'manageSlots',
-                element:<ManageSlots></ManageSlots>,
+                path: 'balance',
+                element: <Balance></Balance>
             },
             {
-                path:'manageMember',
-                element:<ManageMember></ManageMember>
+                path: 'manageSlots',
+                element: <ManageSlots></ManageSlots>,
             },
             {
-                path:'addNewForum',
-                element:<AddNewForum></AddNewForum>
+                path: 'manageMember',
+                element: <ManageMember></ManageMember>
             },
             {
-                path:'addNewClass',
-                element:<AddClass></AddClass>
+                path: 'addNewForum',
+                element: <AddNewForum></AddNewForum>
             },
-          
+            {
+                path: 'addNewClass',
+                element: <AddClass></AddClass>
+            },
+            {
+                path: 'payTrainer/:id',
+                element: <PayTrainer></PayTrainer>,
+                loader: ({ params }) => {
+                    return fetch(`http://localhost:5000/trainerDetail/${params.id}`)
+                }
+            },
+
         ]
     },
 
