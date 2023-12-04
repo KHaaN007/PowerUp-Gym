@@ -10,14 +10,14 @@ import useTrainerVerify from "../../Hooks/useTrainerVerify";
 
 const Dashboard = () => {
 
-    const isAdmin = true;
-    const isTrainer = true;
-    const member = true;
+    // const isAdmin = true;
+    // const isTrainer = true;
+    // const member = true;
 
 
 
-    // const [isAdmin] = useAdmin()
-    // const [isTrainer] = useTrainerVerify()
+    const [isAdmin] = useAdmin()
+    const [isTrainer] = useTrainerVerify()
     return (
         <div
             style={{ backgroundImage: "url('https://i.ibb.co/PZ78Jn9/21937225-gym-banner-12-2.jpg')" }}
@@ -148,8 +148,8 @@ const Dashboard = () => {
                 }
 
                 {
-                    // !isAdmin && !isTrainer 
-                    member
+                    !isAdmin && !isTrainer 
+                    // member
                     && <div className="flex flex-col min-h-fit gap-5">
                         <NavLink
                             to='/'
@@ -171,7 +171,9 @@ const Dashboard = () => {
                                     <IoSettingsSharp className="text-2xl" /> Profile Settings</h3>
                             </div>
                         </NavLink>
-                        <NavLink>
+                        <NavLink
+                        to='recommendedClasses'
+                        >
                             <div>
                                 <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <AiOutlineNotification className="text-2xl" /> Recommended Classes</h3>

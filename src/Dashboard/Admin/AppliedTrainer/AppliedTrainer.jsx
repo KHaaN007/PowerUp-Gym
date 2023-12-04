@@ -25,7 +25,7 @@ const AppliedTrainer = () => {
     //         })
     // }, [axiosPublic])
 
-    const [trainers, refetch] = useTrainer()
+    const [trainers, ,refetch] = useTrainer()
 
 
 
@@ -81,7 +81,7 @@ const AppliedTrainer = () => {
 
 
                                         <AppliedModal
-                                            
+                                            refetch={refetch}
                                             appliedTrainer={appliedTrainer}></AppliedModal>
                                     </tr>
                                 </tbody>)

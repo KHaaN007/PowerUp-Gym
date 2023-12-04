@@ -9,9 +9,7 @@ const Footer = () => {
 
                     {/* <!-- Social media --> */}
                     <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
-                        <div className="mr-12 hidden md:block">
-                            <span>Get connected with us:</span>
-                        </div>
+                        
                         <div className="flex justify-center items-center">
                             <Link
                             to='www.facebook.com'
@@ -101,11 +99,10 @@ const Footer = () => {
 
                         {/* <!-- Text --> */}
                         <div className="mb-6">
-                            <h5 className="mb-2 font-bold uppercase">Explore Our World</h5>
+                            <h5 className="mb-2 font-bold uppercase">Explore Our <h1 className="text-3xl font-serif text-black font-bold">Power<span className="text-blue-600 text-4xl">Up</span></h1></h5>
 
                             <p className="mb-4">
-                                Embark on an adventure of a lifetime and uncover hidden
-                                wonders. Your journey begins now!
+                            Embrace the challenge, push your limits, and sculpt the best version of yourself at the PowerUp.
                             </p>
                         </div>
 
@@ -128,11 +125,7 @@ const Footer = () => {
                                             Unknown Journeys
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#!" className="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
-                                            Hidden Treasures
-                                        </a>
-                                    </li>
+                                   
                                     <li>
                                         <a href="#!" className="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
                                             Enchanted Realms
@@ -158,11 +151,7 @@ const Footer = () => {
                                             Oceanic Odyssey
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#!" className="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
-                                            Space Quest
-                                        </a>
-                                    </li>
+                                 
                                     <li>
                                         <a href="#!" className="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
                                             Desert Expeditions
@@ -183,11 +172,7 @@ const Footer = () => {
                                             Join Us
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#!" className="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
-                                            Calendar
-                                        </a>
-                                    </li>
+                                
                                     <li>
                                         <a href="#!" className="text-neutral-600 hover:text-neutral-800 dark:text-neutral-200">
                                             Contact
@@ -202,103 +187,10 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* <!-- Form --> */}
-                        <div className="relative mb-7">
-                            <form action="">
-                                <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 mb-6">
-                                    {/* <!-- Sign up text --> */}
-                                    <div className="md:ml-auto">
-                                        <p className="font-bold">Sign up for our newsletter</p>
-                                    </div>
+                       
 
-                                    {/* <!-- Input --> */}
-                                    <div>
-                                        <label for="inputSignUp" className="sr-only">
-                                            Small input
-                                        </label>
-                                        <input
-                                            type="email"
-                                            id="inputSignUp"
-                                            placeholder="Your address"
-                                            className="w-full block rounded-lg border dark:border-none dark:bg-neutral-700 py-[9px] px-3 pr-4 text-sm focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none"
-                                        />
-                                    </div>
-
-                                    {/* <!-- Button --> */}
-                                    <div className="md:mr-auto">
-                                        <button
-                                            type="submit"
-                                            className="inline-block rounded bg-indigo-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-indigo-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-indigo-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-indigo-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
-                                        >
-                                            Subscribe
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        {/* <!-- Images --> */}
-                        <div className="mb-7 flex justify-center gap-x-5">
-                            {/* <!-- Image wrapper --> */}
-                            <div className="relative w-full overflow-hidden bg-cover bg-no-repeat rounded-lg">
-                                <img
-                                    src="https://mdbootstrap.com/img/new/standard/city/091.webp"
-                                    className="w-full"
-                                    alt="Louvre"
-                                />
-                                <a href="#!">
-                                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-                                </a>
-                            </div>
-
-                            {/* <!-- Image wrapper --> */}
-                            <div className="relative w-full overflow-hidden bg-cover bg-no-repeat rounded-lg">
-                                <img
-                                    src="https://mdbootstrap.com/img/new/standard/city/084.webp"
-                                    className="w-full"
-                                    alt="Louvre"
-                                />
-                                <a href="#!">
-                                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-                                </a>
-                            </div>
-
-                            {/* <!-- Image wrapper --> */}
-                            <div className="relative w-full overflow-hidden bg-cover bg-no-repeat rounded-lg">
-                                <img
-                                    src="https://mdbootstrap.com/img/new/standard/city/086.webp"
-                                    className="w-full"
-                                    alt="Louvre"
-                                />
-                                <a href="#!">
-                                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-                                </a>
-                            </div>
-
-                            {/* <!-- Image wrapper --> */}
-                            <div className="hidden sm:flex relative w-full overflow-hidden bg-cover bg-no-repeat rounded-lg">
-                                <img
-                                    src="https://mdbootstrap.com/img/new/standard/city/074.webp"
-                                    className="w-full"
-                                    alt="Louvre"
-                                />
-                                <a href="#!">
-                                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-                                </a>
-                            </div>
-
-                            {/* <!-- Image wrapper --> */}
-                            <div className="hidden md:flex relative w-full overflow-hidden bg-cover bg-no-repeat rounded-lg">
-                                <img
-                                    src="https://mdbootstrap.com/img/new/standard/city/095.webp"
-                                    className="w-full"
-                                    alt="Louvre"
-                                />
-                                <a href="#!">
-                                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-                                </a>
-                            </div>
-                        </div>
+             
+                      
 
 
                     </div>
@@ -309,22 +201,12 @@ const Footer = () => {
                         <span>© 2023 Copyright: </span>
 
                         {/* <!-- Logo --> */}
-                        <a className="mx-3" href="#">
-                            <img
-                                src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
-                                className="h-5"
-                                alt="TE Logo"
-                                loading="lazy"
-                            />
-                        </a>
+                        <div className="flex items-center">
 
-                        <a
-                            className="font-semibold text-neutral-600 dark:text-neutral-400"
-                            href="https://tw-elements.com/"
-                        >
-                            Tailwind Elements
-                        </a>
+                        <img className="w-20" src="./powerUplogo-removebg-preview.png" alt="" />
+                        <h1 className="text-3xl font-serif text-black font-bold">Power<span className="text-blue-600 text-4xl">Up</span></h1>
 
+                    </div>
                     </div>
 
 

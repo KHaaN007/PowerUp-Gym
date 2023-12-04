@@ -2,13 +2,23 @@ import useTrainer from "../../../Hooks/useTrainer";
 import { FaPaypal } from "react-icons/fa";
 import './AllTrainers.css'
 import { Link } from "react-router-dom";
+import usePayment from "../../../Hooks/usePayment";
 
 const AllTrainers = () => {
 
     const [trainers] = useTrainer()
 
-    // console.log(trainers);
+    const [payment] = usePayment()
+ 
+console.log(payment);
+
+
+
+
     const appliedTrainers = trainers.filter(trainer => trainer.status === 'trainer')
+
+
+
 
     return (
         <div>
@@ -47,12 +57,14 @@ const AllTrainers = () => {
 
                                     </td>
                                     <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+
                                         <Link to={`/dashboard/payTrainer/${trainer._id}`}>
                                             <button
                                                 className="
-                                        text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-4 hover:scale-100 gap-2
-                                        mb-0 border  leading-tight flex justify-center items-center"><FaPaypal></FaPaypal> Pay</button>
+                                    text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-4 hover:scale-100 gap-2
+                                    mb-0 border  leading-tight flex justify-center items-center"><FaPaypal></FaPaypal> Pay</button>
                                         </Link>
+
 
                                     </td>
 

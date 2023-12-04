@@ -23,9 +23,13 @@ import ManageSlots from "../Dashboard/Trainer/ManageSlots/ManageSlots";
 import ManageMember from "../Dashboard/Trainer/ManageMember/ManageMember";
 import AddNewForum from "../Dashboard/Trainer/AddNewForum/AddNewForum";
 import AddClass from "../Dashboard/Trainer/AddNewClass/AddClass";
-import AppliedModal from "../Dashboard/Admin/AppliedTrainer/AppliedModal";
+
 import DashboardHome from "../Dashboard/DashboardHome";
-import PayTrainer from "../Dashboard/Admin/AllTrainers/PayTrainer";
+
+import Payment from "../Component/Payment/Payment";
+import RecommendedClasses from "../Dashboard/Member/RecommendedClasses/RecommendedClasses";
+import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
 
 
 
@@ -57,7 +61,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/becomeATrainer',
-                element: <BecomeATrainer></BecomeATrainer>
+                element: <PrivateRoute><BecomeATrainer></BecomeATrainer></PrivateRoute>
             },
             {
                 path: '/trainerDetail/:id',
@@ -68,7 +72,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/packageDetail/:id',
-                element: <TrainerPackage></TrainerPackage>,
+                element: <PrivateRoute><TrainerPackage></TrainerPackage></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/trainerDetail/${params.id}`)
 
 
@@ -87,27 +91,27 @@ export const router = createBrowserRouter([
     /**Dashboard Route**/
     {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
             {
                 path: '/dashboard',
-                element: <DashboardHome></DashboardHome>
+                element: <PrivateRoute><DashboardHome></DashboardHome></PrivateRoute>
             },
             {
                 path: 'allSubscribes',
-                element: <AllSubscribers></AllSubscribers>
+                element: <AdminRoute><AllSubscribers></AllSubscribers></AdminRoute>
             },
             {
                 path: 'allTrainer',
-                element: <AllTrainers></AllTrainers>
+                element: <AdminRoute><AllTrainers></AllTrainers></AdminRoute>
             },
             {
                 path: 'appliedTrainer',
-                element: <AppliedTrainer></AppliedTrainer>
+                element: <AdminRoute><AppliedTrainer></AppliedTrainer></AdminRoute>
             },
             {
                 path: 'balance',
-                element: <Balance></Balance>
+                element: <AdminRoute><Balance></Balance></AdminRoute>
             },
             {
                 path: 'manageSlots',
@@ -127,10 +131,15 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'payTrainer/:id',
-                element: <PayTrainer></PayTrainer>,
+                element: <Payment></Payment>,
                 loader: ({ params }) => {
                     return fetch(`http://localhost:5000/trainerDetail/${params.id}`)
                 }
+            },
+            {
+                path: 'recommendedClasses',
+                element: <RecommendedClasses></RecommendedClasses>,
+                
             },
 
         ]

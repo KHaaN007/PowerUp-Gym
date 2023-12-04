@@ -1,5 +1,6 @@
 import useTrainer from "../Hooks/useTrainer";
 import useUser from "../Hooks/useUser";
+import { FcAddDatabase, FcConferenceCall, FcPortraitMode, FcPositiveDynamic } from "react-icons/fc";
 
 const DashboardHome = () => {
     const [users] = useUser()
@@ -12,12 +13,11 @@ const DashboardHome = () => {
     const totaltrainer = trainers.filter(trainer => trainer.status === 'trainer')
     const appliedTotaltrainer = trainers.filter(trainer => trainer.status === 'Applied Trainer')
 
-    console.log(totaltrainer);
 
     return (
         <div>
             <div className="flex justify-center items-center h-1/4 bg-gradient-to-r from-blue-300 to-indigo-500 border-2 rounded-xl m-2">
-                <h1 className="text-8xl p-10 shadow-2xl rounded-2xl font-semibold text-white font-serif">DashBoard</h1>
+                <h1 className="text-8xl gap-8 flex justify-center items-center p-10 shadow-2xl rounded-2xl font-semibold text-white font-serif"><FcPositiveDynamic />DashBoard</h1>
             </div>
 
             <div className="flex flex-wrap h-1/4 bg-blue-300 border-2 rounded-xl m-2">
@@ -33,7 +33,7 @@ const DashboardHome = () => {
                                 </div>
                                 <div className="relative w-auto pl-4 flex-initial">
                                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-pink-500">
-                                        <i className="fas fa-chart-pie"></i>
+                                    <FcConferenceCall className="text-2xl"></FcConferenceCall> 
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ const DashboardHome = () => {
                                 </div>
                                 <div className="relative w-auto pl-4 flex-initial">
                                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-pink-500">
-                                        <i className="fas fa-chart-pie"></i>
+                                    <FcPortraitMode className="text-2xl"></FcPortraitMode> 
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ const DashboardHome = () => {
                                 </div>
                                 <div className="relative w-auto pl-4 flex-initial">
                                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-pink-500">
-                                        <i className="fas fa-chart-pie"></i>
+                                        <FcAddDatabase className="text-2xl"></FcAddDatabase>
                                     </div>
                                 </div>
                             </div>

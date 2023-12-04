@@ -15,7 +15,7 @@ const TrainerPackage = () => {
 
     const { user } = useAuth()
 
-
+console.log(user);
     const axiosSecure = useAxiosSecure()
 
     useEffect(() => {
@@ -24,9 +24,8 @@ const TrainerPackage = () => {
             .then(data => setSlotPackages(data))
     }, [])
 
-    // console.log(slotPackages);
+    
 
-    //
     const handleBooked = async (id) => {
         console.log(id);
 
@@ -34,10 +33,11 @@ const TrainerPackage = () => {
             const filterSlotPackage = slotPackages.filter(slotPackage => slotPackage.id === id);
 
             for (const slot of filterSlotPackage) {
-                console.log(slot);
                 const BookedPackage = {
-                    name: data.name,
+                    name: user.displayName,
+                    image: user.photoUrl,
                     Useremail: user.email,
+                    trainerEmail: data.email,
                     id: data._id,
                     status: data.trainer,
                     packageName: slot.name,

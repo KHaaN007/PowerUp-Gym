@@ -17,12 +17,13 @@ const AppliedModal = ({ appliedTrainer, refetch }) => {
     const handleConfirm = () => {
         axiosSecure.patch(`/trainers/${appliedTrainer.email}`)
             .then(response => {
+                refetch()
                 // Check if the update was successful (you might need to modify this condition based on your API response)
                 if (response.status === 200) {
                     Swal.fire({
                         icon: 'success',
-                        title: 'Update Successful',
-                        text: 'Trainer information has been updated!',
+                        title: 'Promoted Successful',
+                        text: 'Promoted To Trainer!',
                     });
                 } else {
                     // Handle other response statuses or error conditions if needed
