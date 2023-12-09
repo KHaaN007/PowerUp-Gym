@@ -25,7 +25,7 @@ const Testimonial = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://mern-stack-website-server.vercel.app//review')
             .then(res => res.json())
             .then(data => {
 

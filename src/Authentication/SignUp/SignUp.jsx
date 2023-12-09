@@ -62,6 +62,7 @@ const SignUp = () => {
                             const userInfo = {
                                 name: data.name,
                                 email: data.email,
+                                image: res.data.data.display_url ?res.data.data.display_url : data.photoURL,
                                 role: 'member'
                             }
                             axiosPublic.post('/users', userInfo)

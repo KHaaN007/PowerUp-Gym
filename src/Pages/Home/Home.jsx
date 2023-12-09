@@ -2,6 +2,7 @@ import Newsletter from "../Newsletter/Newsletter";
 import About from "./About/About";
 import Banner from "./Banner/Banner";
 import Featured from "./Featured/Featured";
+import FeaturedBlog from "./FeaturedBlog/FeaturedBlog";
 import FeaturedClasses from "./FeaturedClasses/FeaturedClasses";
 import FeaturedTrainer from "./FeaturedTrainer/FeaturedTrainer";
 import Marqee from "./Marqee/Marqee";
@@ -16,9 +17,10 @@ const Home = () => {
             <Featured></Featured>
             <About></About>
             <FeaturedClasses></FeaturedClasses>
+            <FeaturedBlog></FeaturedBlog>
             <Testimonial></Testimonial>
-            <FeaturedTrainer></FeaturedTrainer>
             <Newsletter></Newsletter>
+            <FeaturedTrainer></FeaturedTrainer>
         </div>
     );
 };

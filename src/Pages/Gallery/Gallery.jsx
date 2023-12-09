@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import GalleryBanner from "./GalleryBanner";
 
 const Gallery = () => {
 
@@ -15,6 +16,7 @@ const Gallery = () => {
 
     return (
         <div>
+            <GalleryBanner></GalleryBanner>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {
                     images.map(image => <div key={image.id}>

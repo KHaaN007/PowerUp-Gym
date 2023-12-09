@@ -24,6 +24,8 @@ console.log(user);
             .then(data => setSlotPackages(data))
     }, [])
 
+
+    console.log(data);
     
 
     const handleBooked = async (id) => {
@@ -38,6 +40,8 @@ console.log(user);
                     image: user.photoUrl,
                     Useremail: user.email,
                     trainerEmail: data.email,
+                    trainerName:data.name,
+                    trainerImage:data.profileImage,
                     id: data._id,
                     status: data.trainer,
                     packageName: slot.name,

@@ -45,7 +45,7 @@ console.log(payMoney);
                                 <div className="flex flex-wrap">
                                     <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 className="text-blueGray-400  font-bold  flex justify-center items-center text-3xl text-indigo-50">Total Balance</h5>
-                                        <h1 className="font-bold rounded-2xl w-full text-center text-6xl h-full flex items-center justify-center text-orange-300 bg-blue-600 p-4 m-2">{total}</h1>
+                                        <h1 className="font-bold rounded-2xl w-full text-center text-6xl h-full flex items-center justify-center text-orange-300 bg-blue-600 p-4 m-2">{total}$</h1>
                                     </div>
                                     <div className="relative w-auto pl-4 flex-initial">
                                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-pink-500">
@@ -64,7 +64,7 @@ console.log(payMoney);
                                 <div className="flex flex-wrap">
                                     <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 className="text-blueGray-400  font-bold  flex justify-center items-center text-3xl text-indigo-50">Total Remaining </h5>
-                                        <h1 className="font-bold rounded-2xl w-full text-center text-6xl h-full flex items-center justify-center text-orange-300 bg-blue-600 p-4 m-2">{remainingBalance}</h1>
+                                        <h1 className="font-bold rounded-2xl w-full text-center text-6xl h-full flex items-center justify-center text-orange-300 bg-blue-600 p-4 m-2">{remainingBalance}$</h1>
                                     </div>
                                     <div className="relative w-auto pl-4 flex-initial">
                                         <div className="text-white  text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-pink-500">
@@ -82,7 +82,7 @@ console.log(payMoney);
                                 <div className="flex flex-wrap">
                                     <div className="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 className="text-blueGray-400  font-bold  flex justify-center items-center text-3xl text-indigo-50">Total payment </h5>
-                                        <h1 className="font-bold rounded-2xl w-full text-center text-6xl h-full flex items-center justify-center text-orange-300 bg-blue-600 p-4 m-2">{payMoney}</h1>
+                                        <h1 className="font-bold rounded-2xl w-full text-center text-6xl h-full flex items-center justify-center text-orange-300 bg-blue-600 p-4 m-2">{payMoney}$</h1>
                                     </div>
                                     <div className="relative w-auto pl-4 flex-initial">
                                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-pink-500">

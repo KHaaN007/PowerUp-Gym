@@ -1,24 +1,18 @@
 import { Link, useLoaderData } from "react-router-dom";
 import AdsBanner from "../../Component/AdsBanner/AdsBanner";
-import Marquee from "react-fast-marquee";
-import BeATrainer from "./BeATrainer/BeATrainer";
+
 
 const TrainerDetails = () => {
     const data = useLoaderData()
-
-
-    console.log(data);
 
 
 
     return (
         <div>
             <AdsBanner></AdsBanner>
-            <Marquee>
-                <h2 className="text-2xl">{data.name} Have {data.availableSlotsPerDay} Slots In A day</h2>
-            </Marquee>
+           
             <div>
-                <Link className="grid grid-cols-3 gap-10 container mx-auto" to={`/packageDetail/${data._id}`}>
+                <Link className="grid grid-cols-3 gap-10 container my-10 mx-auto" to={`/packageDetail/${data._id}`}>
 
                     {
                         data.availableTimeSlots.map((slot, index) => <div key={data._id}>
@@ -53,8 +47,6 @@ const TrainerDetails = () => {
 
                 </Link>
             </div>
-
-            <BeATrainer></BeATrainer>
         </div>
     );
 };

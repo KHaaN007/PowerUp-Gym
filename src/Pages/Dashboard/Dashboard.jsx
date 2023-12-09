@@ -159,13 +159,17 @@ const Dashboard = () => {
                                     <FaHouseChimney className="text-2xl" />Member Home</h3>
                             </div>
                         </NavLink>
-                        <NavLink>
+                        <NavLink
+                        to='activityLog'
+                        >
                             <div>
                                 <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <IoIosLogOut className="text-2xl" /> Activity Log</h3>
                             </div>
                         </NavLink>
-                        <NavLink>
+                        <NavLink 
+                        to='profileSetting'
+                        >
                             <div>
                                 <h3 className="text-lg hover:bg-gradient-to-r from-blue-600 to-indigo-800w-auto text-gray-400 hover:text-white mx-5 text-center p-2 rounded-xl hover:shadow-2xl font-semibold transition duration-500 ease-in-out transform hover:translate-x-8 hover:scale-100 flex justify-center items-center gap-2">
                                     <IoSettingsSharp className="text-2xl" /> Profile Settings</h3>

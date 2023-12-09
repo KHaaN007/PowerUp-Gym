@@ -15,10 +15,13 @@ const FeaturedTrainer = () => {
     const [trainers] = useTrainer()
 
 
-console.log(trainers);
-const limitedTrainers = trainers.slice(0, 6);
+
+    const limitedTrainers = trainers.slice(0, 6);
     return (
         <div>
+            <div className='w-6/12 mx-auto'>
+                <h2 className="sm:text-6xl text-2xl font-extrabold lg:my-16  shadow-lg p-5 border-r-8 rounded-lg">OUR TRAINERS</h2>
+            </div>
 
 
             <div data-aos="fade-down" className=" md:px-6 gap-10 py-10  grid lg:grid-cols-3 grid-cols-1 container mx-auto">

@@ -30,6 +30,8 @@ import Payment from "../Component/Payment/Payment";
 import RecommendedClasses from "../Dashboard/Member/RecommendedClasses/RecommendedClasses";
 import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
+import ActivityLog from "../Dashboard/Member/ActivityLog/ActivityLog";
+import ProfileSetting from "../Dashboard/Member/ProfileSetting/ProfileSetting";
 
 
 
@@ -66,21 +68,21 @@ export const router = createBrowserRouter([
             {
                 path: '/trainerDetail/:id',
                 element: <TrainerDetails></TrainerDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/trainerDetail/${params.id}`)
+                loader: ({ params }) => fetch(`https://mern-stack-website-server.vercel.app/trainerDetail/${params.id}`)
 
 
             },
             {
                 path: '/packageDetail/:id',
                 element: <PrivateRoute><TrainerPackage></TrainerPackage></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/trainerDetail/${params.id}`)
+                loader: ({ params }) => fetch(`https://mern-stack-website-server.vercel.app/trainerDetail/${params.id}`)
 
 
             },
             {
                 path: '/classeDetail/:id',
                 element: <ClasseDetails></ClasseDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/classesDetail/${params.id}`)
+                loader: ({ params }) => fetch(`https://mern-stack-website-server.vercel.app/classesDetail/${params.id}`)
 
 
             }
@@ -133,12 +135,22 @@ export const router = createBrowserRouter([
                 path: 'payTrainer/:id',
                 element: <Payment></Payment>,
                 loader: ({ params }) => {
-                    return fetch(`http://localhost:5000/trainerDetail/${params.id}`)
+                    return fetch(`https://mern-stack-website-server.vercel.app/trainerDetail/${params.id}`)
                 }
             },
             {
                 path: 'recommendedClasses',
                 element: <RecommendedClasses></RecommendedClasses>,
+                
+            },
+            {
+                path: 'activityLog',
+                element: <ActivityLog></ActivityLog>,
+                
+            },
+            {
+                path: 'profileSetting',
+                element: <ProfileSetting></ProfileSetting>
                 
             },
 

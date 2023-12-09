@@ -9,8 +9,8 @@ const AllTrainers = () => {
     const [trainers] = useTrainer()
 
     const [payment] = usePayment()
- 
-console.log(payment);
+
+    console.log(payment);
 
 
 

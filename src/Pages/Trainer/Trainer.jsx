@@ -4,6 +4,8 @@ import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
 
 import useTrainer from "../../Hooks/useTrainer";
+import AdsBanner from '../../Component/AdsBanner/AdsBanner';
+import BeATrainer from './BeATrainer/BeATrainer';
 AOS.init();
 
 
@@ -18,7 +20,7 @@ const Trainer = () => {
 
     return (
         <div>
-
+           <BeATrainer></BeATrainer>
 
             <div data-aos="fade-down" className=" md:px-6 gap-10 py-10  grid lg:grid-cols-2 grid-cols-1">
                 {
